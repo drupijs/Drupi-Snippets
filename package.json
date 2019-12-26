@@ -1,0 +1,100 @@
+{
+    "name": "drupi-snippets",
+    "displayName": "Drupi-Snippets",
+    "description": "Native Drupi snippets support for VSCode",
+    "version": "0.0.1",
+    "author": {
+        "name": "Alexander Møller",
+        "email": "thehundeklemmen@gmail.com",
+        "url": "https://Hundeklemmen.com/"
+    },
+    "contributors": [
+        "AndreaTech"
+    ],
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/manager/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/command/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/event/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/cast/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/http/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/logger/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/variable/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/scoreboard/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/material/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/socket/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/express/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/expansions/vault/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/expansions/TitleManager/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/expansions/placeholderapi/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/expansions/worldguard/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/expansions/holograms/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/expansions/database/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/scripts/console/snippets.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/bukkit/server.json"
+            }
+        ]
+    }
+}

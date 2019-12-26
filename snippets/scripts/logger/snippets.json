@@ -1,0 +1,12 @@
+{
+    "Drupi Logger | info": {
+		"prefix": "logger.info",
+		"body": "logger.info(\"${1:\"Message\"}\");",
+		"description": "Log an INFO message"
+    },
+    "Drupi Logger | warning": {
+		"prefix": "logger.warning",
+		"body": "logger.warning(\"${1:\"msg\"});",
+		"description": "log a Warning message"
+	}
+}

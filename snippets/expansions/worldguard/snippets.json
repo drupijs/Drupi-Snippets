@@ -1,0 +1,82 @@
+{
+    "Drupi WorldGuard | get": {
+		"prefix": "worldguard.get",
+		"body": "worldguard.get();",
+		"description": "Returns WorldguardPlugin"
+    },
+    "Drupi WorldGuard | add Member": {
+		"prefix": "worldguard.addMember",
+		"body": "LabyModAPI.addMember(${1:\"Player\"}, \"${2:\"Region\"}\", ${3:\"World\"});",
+		"description": "Add player member to region"
+    },
+    "Drupi WorldGuard | remove Member": {
+		"prefix": "worldguard.removeMember",
+		"body": "worldguard.removeMember(${1:\"Player\"}, \"${2:\"Region\"}\", ${3:\"World\"});",
+		"description": "Remove player member to region"
+    },
+    "Drupi WorldGuard | add Owner": {
+		"prefix": "worldguard.addOwner",
+		"body": "worldguard.addOwner(${1:\"Player\"}, ${2:\"World\"});",
+		"description": "Add player owner to region"
+    },
+    "Drupi WorldGuard | remove Owner": {
+		"prefix": "worldguard.removeOwner",
+		"body": "worldguard.removeOwner(${1:\"Player\"}, \"${2:\"Region\"}\", ${3:\"World\"});",
+		"description": "remove player owner from region"
+    },
+    "Drupi WorldGuard | create Region": {
+		"prefix": "worldguard.createRegion",
+		"body": "worldguard.createRegion(\"${1:\"Name\"}\", ${2:\"Location 1\"}, ${3:\"Location 2\"}, ${4:\"World\"});",
+		"description": "Create new region"
+    },
+    "Drupi WorldGuard | delete Region": {
+		"prefix": "worldguard.deleteRegion",
+		"body": "worldguard.deleteRegion(\"${1:\"Name\"}\", ${2:\"World\"});",
+		"description": "Delete a region"
+    },
+    "Drupi WorldGuard | regions Of Player": {
+		"prefix": "worldguard.regionsOfPlayer",
+		"body": "worldguard.regionsOfPlayer(${1:\"Player\"}, ${2:\"World\"});",
+		"description": "Returns all regions the given player is a member of\n\nReturns String[]"
+    },
+    "Drupi WorldGuard | region At": {
+		"prefix": "worldguard.regionAt",
+		"body": "worldguard.regionAt(${1:\"Location\"});",
+		"description": "Get region at a given location"
+    },
+    "Drupi WorldGuard | set Flag": {
+		"prefix": "worldguard.setFlag",
+		"body": "worldguard.setFlag(\"${1:\"Region\"}\", ${2:\"World\"}, \"${3:\"Flag\"}\", \"${4:\"(Object) Value\"}\");",
+		"description": "Set flag to given region"
+    },
+    "Drupi WorldGuard | all Flag Of Region": {
+		"prefix": "worldguard.allFlagOfRegion",
+		"body": "worldguard.allFlagOfRegion(\"${1:\"region\", ${2:\"World\"})",
+		"description": "All flag of given region\n\nReturns String[] "
+    },
+    "Drupi WorldGuard | all Members": {
+		"prefix": "worldguard.allMembers",
+		"body": "worldguard.allMembers(\"${1:\"Region\"}\", ${2:\"World\"});",
+		"description": "Returns String[]"
+    },
+    "Drupi WorldGuard | all Owners": {
+		"prefix": "worldguard.allOwners",
+		"body": "worldguard.allOwners(\"${1:\"Region\"}\", ${2:\"World\"});",
+		"description": "Returns String[]"
+    },
+    "Drupi WorldGuard | all Regions In World": {
+		"prefix": "worldguard.allRegionsInWorld",
+		"body": "worldguard.allRegionsInWorld(${1:\"World\"});",
+		"description": "Returns String[]"
+    },
+    "Drupi WorldGuard | aet Point 1": {
+		"prefix": "worldguard.aetPoint1",
+		"body": "worldguard.aetPoint1(\"${1:\"Region\"}\", ${2:\"World\"});",
+		"description": "Returns Location[]"
+    },
+    "Drupi WorldGuard | aet Point 2": {
+		"prefix": "worldguard.aetPoint2",
+		"body": "worldguard.aetPoint2(\"${1:\"Region\"}\", ${2:\"World\"});",
+		"description": "Returns Location[]"
+    }
+}

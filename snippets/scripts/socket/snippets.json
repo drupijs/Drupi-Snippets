@@ -1,0 +1,10 @@
+{
+    "Drupi Socket | new Connection": {
+		"prefix": "socket.newConnection",
+		"body": [
+            "socket.newConnection(\"${1:\"URL\"}\");",
+            "socket.newConnection(\"${1:\"URL\"}\", ${2:\"(Boolean) Websocket Only\"}, ${3:\"(Boolean) Force new\"}, ${4:\"(Boolean) Reconnection\"});"
+        ],
+		"description": "Create new socket.io connection\n\nSee more at https://socket.io/"
+    }
+}

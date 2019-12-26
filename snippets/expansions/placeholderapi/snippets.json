@@ -1,0 +1,10 @@
+{
+    "Drupi PlaceholderAPI | translate String": {
+		"prefix": "placeholderapi.translateString",
+		"body": [
+            "placeholderapi.translateString(${1:\"Player\"}, \"${2:\"Text\"}\");",
+            "placeholderapi.translateString(${1:\"OfflinePlayer\"}, \"${2:\"Text\"}\");"    
+        ],
+		"description": "Translate given text to replace placeholders using PlaceholderAPI"
+    }
+}

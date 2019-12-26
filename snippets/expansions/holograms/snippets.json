@@ -1,0 +1,62 @@
+{
+    "Drupi Holograms | HologramManager": {
+		"prefix": "holograms.HologramManager",
+		"body": "holograms.HologramManager();",
+		"description": "See more at https://github.com/sainttx/Holograms\n\nReturns HologramManager"
+    },
+    "Drupi Holograms | Create": {
+		"prefix": "holograms.Create",
+		"body": "holograms.Create(\"${1:\"ID\"}\", ${2:\"Location\"});",
+		"description": "Create new holograms"
+    },
+    "Drupi Holograms | Get": {
+		"prefix": "holograms.get",
+		"body": "holograms.get(\"${1:\"ID\"}\");",
+		"description": "Get holograms \n\n Returns String"
+    },
+    "Drupi Holograms | Delete": {
+		"prefix": "holograms.delete",
+		"body": "holograms.delete(${1:\"Hologram\"});",
+		"description": "Delete holograms"
+    },
+    "Drupi Holograms | Move": {
+		"prefix": "holograms.move",
+		"body": "holograms.move(${1:\"Hologram\"}, ${2:\"Location\"});",
+		"description": "Move holograms in different location"
+    },
+    "Drupi Holograms | Hide": {
+		"prefix": "holograms.hide",
+		"body": "holograms.hide(${1:\"Hologram\"});",
+		"description": "Hide holograms"
+    },
+    "Drupi Holograms | Show": {
+		"prefix": "holograms.show",
+		"body": "holograms.show(${1:\"Hologram\"});",
+		"description": "Show holograms"
+    },
+    "Drupi Holograms | IsVisible": {
+		"prefix": "holograms.IsVisible",
+		"body": "holograms.IsVisible(${1:\"Hologram\"});",
+		"description": "Returns boolean"
+    },
+    "Drupi Holograms | AddLine": {
+		"prefix": "holograms.AddLine",
+		"body": "holograms.AddLine(${1:\"Hologram\"}, \"${2:\"Text\"}\");",
+		"description": "Add line to holograms"
+    },
+    "Drupi Holograms | AddItemLine": {
+		"prefix": "holograms.AddItemLine",
+		"body": "holograms.AddItemLine(${1:\"Hologram\"}, ${2:\"Itemstack\"});",
+		"description": "Add item line to holograms"
+    },
+    "Drupi Holograms | RemoveLine": {
+		"prefix": "holograms.RemoveLine",
+		"body": "holograms.RemoveLine(${1:\"Hologram\"}, ${2:\"Index\"});",
+		"description": "Remove line to holograms"
+    },
+    "Drupi Holograms | SetLine": {
+		"prefix": "holograms.SetLine",
+		"body": "holograms.SetLine(${1:\"Hologram\"}, ${2:\"Index\"}, \"${3:\"Text\"}\");",
+		"description": "Set line to holograms"
+    }
+}

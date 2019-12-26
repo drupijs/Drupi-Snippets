@@ -1,0 +1,12 @@
+{
+	"Drupi Event | add Listener": {
+		"prefix": "event.addListener",
+		"body": "event.addListener(\"${1:Event name}\", (event) => {\n\t$2\n});",
+		"description": "Register a new event listener"
+	},
+	"Drupi Event | remove Listener": {
+		"prefix": "event.removeListener",
+		"body": "event.removeListener(\"${1:Event name}\", ${2:function});",
+		"description": "Remove a registered event listener"
+	}
+}

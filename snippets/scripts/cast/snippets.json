@@ -1,0 +1,52 @@
+{
+    "Drupi Cast | as String": {
+		"prefix": "cast.asString",
+		"body": "cast.asString(${1:\"Object\"});",
+		"description": "returns object casted as a String"
+    },
+    "Drupi Cast | as Int": {
+		"prefix": "cast.asInt",
+		"body": "cast.asInt(${1:\"Object\"});",
+		"description": "returns object casted as a Int"
+	},
+    "Drupi Cast | as Double": {
+		"prefix": "cast.asDouble",
+		"body": "cast.asDouble(${1:\"Object\"});",
+		"description": "returns object casted as a Double"
+    },
+    "Drupi Cast | as Float": {
+		"prefix": "cast.asFloat",
+		"body": "cast.asFloat(${1:\"Object\"});",
+		"description": "returns object casted as a Float"
+	},
+    "Drupi Cast | as Byte": {
+		"prefix": "cast.asByte",
+		"body": "cast.asByte(${1:\"Object\"});",
+		"description": "returns object casted as a Byte"
+    },
+    "Drupi Cast | as Number": {
+		"prefix": "cast.asNumber",
+		"body": "cast.asNumber(${1:\"Object\"});",
+		"description": "returns object casted as a Number"
+    },
+    "Drupi Cast | as Player": {
+		"prefix": "cast.asPlayer",
+		"body": "cast.asPlayer(${1:\"Object\"});",
+		"description": "returns object casted as a Player"
+	},
+    "Drupi Cast | as Wool": {
+		"prefix": "cast.asWool",
+		"body": "cast.asWool(${1:\"Object\"});",
+		"description": "returns object casted as Wool"
+    },
+    "Drupi Cast | as Sign": {
+		"prefix": "cast.asSign",
+		"body": "cast.asSign(${1:\"Object\"});",
+		"description": "returns object casted as a Sign"
+	},
+    "Drupi Cast | as": {
+		"prefix": "cast.as",
+		"body": "cast.as(\n${1:\"Type\"}\n, ${2:\"Object\"});",
+		"description": "returns object casted as given type"
+	}
+}

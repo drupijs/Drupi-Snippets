@@ -1,0 +1,528 @@
+{
+    "Drupi Server | addRecipe": {
+		"prefix": "server.addRecipe",
+		"body": "server.addRecipe(${1:\"Recipe\"});",
+		"description": "Adds a recipe to the crafting manager.\n\nReturns boolean"
+    },
+    "Drupi Server | advancement Iterator​": {
+		"prefix": "server.advancementIterator​",
+		"body": "server.advancementIterator​();",
+		"description": "Get an iterator through all advancements.\n\nReturns Iterator<Advancement>"
+    },
+    "Drupi Server | ban IP": {
+		"prefix": "server.banIP",
+		"body": "server.banIP(\"{1:\"IP address\"}\");",
+		"description": "Bans the specified address from the server."
+    },
+    "Drupi Server | broadcast": {
+		"prefix": "server.broadcast",
+		"body": "server.broadcast(\"${1:\"Message\"}\", \"${2:\"Permission\"}\");",
+		"description": "Broadcasts the specified message to every user with the given permission name.\n\nReturns integer"
+    },
+    "Drupi Server | broadcast Message": {
+		"prefix": "server.broadcastMessage",
+		"body": "server.broadcastMessage(\"${1:\"Message\"}\");",
+		"description": "Broadcast a message to all players.\n\nReturns integer"
+    },
+    "Drupi Server | clear Recipes​": {
+		"prefix": "server.clearRecipes​",
+		"body": "server.clearRecipes​();",
+		"description": "Clears the list of crafting recipes."
+    },
+    "Drupi Server | create BlockData​": {
+		"prefix": "server.createBlockData​",
+		"body": [
+            "server.createBlockData(\"${1:\"Data\"}\");",
+            "server.createBlockData(${1:\"Material\"});",
+            "server.createBlockData(${1:\"Material\"}, \"${1:\"Data\"}\");",
+            "server.createBlockData(${1:\"Material\"}, ${1:\"consumer\"});"
+        ],
+		"description": [
+            "Broadcasts the specified message to every user with the given permission name.",
+            "Creates a new BlockData instance for the specified Material, with all properties initialized to unspecified defaults.",
+            "Creates a new BlockData instance for the specified Material, with all properties initialized to unspecified defaults, except for those provided in data.",
+            "Creates a new BlockData instance for the specified Material, with all properties initialized to unspecified defaults.\n\n Return Data"
+        ]
+    },
+    "Drupi Server | create BossBar​": {
+		"prefix": "server.createBossBar​",
+		"body": [
+            "server.createBossBar​(\"${1:\"Title\"}\", ${2:\"(BarColor) color\"}, ${3:\"(BarStyle) style\"}, ${4:\"(BarFlag...) flags\"});",
+            "server.createBossBar​(${1:\"(NamespacedKey) key\"}, \"${2:\"Title\"}\", ${3:\"(BarColor) color\"}, ${4:\"(BarStyle) style\"}, ${5:\"(BarFlag...) flags\"});"
+        ],
+		"description": "Creates a boss bar instance to display to players.\n\nReturns BossBar"
+    },
+    "Drupi Server | create ChunkData​": {
+		"prefix": "server.createChunkData",
+		"body": "server.createChunkData(${1:\"World\"});",
+		"description": "Create a ChunkData for use in a generator.\n\nReturns ChunkGenerator.ChunkData"
+    },
+    "Drupi Server | create Explorer Map​": {
+		"prefix": "server.createExplorerMap​",
+		"body": [
+            "server.createExplorerMap​(${1:\"World\"}, ${2:\"Location\"}, ${3:\"StructureType\"});",
+            "server.createExplorerMap​(${1:\"World\"}, ${2:\"Location\"}, ${3:\"StructureType\"}, ${4:\"(integer) radius\"}, ${5:\"(boolean) findUnexplored\"});"
+        ],
+		"description": "Create a new explorer map targeting the closest nearby structure of a given StructureType."
+    },
+    "Drupi Server | create Inventory​": {
+		"prefix": "server.createInventory",
+		"body": [
+            "server.createInventory(${1:\"Owner\"}, ${2:\"Size\"});",
+            "server.createInventory(${1:\"Owner\"}, ${2:\"Size\"}, \"${1:\"Title\"}\");",
+            "server.createInventory(${1:\"Owner\"}, ${2:\"Type\"}",
+            "server.createInventory(${1:\"Owner\"}, ${2:\"Type\"}, \"${1:\"Title\"}\");"
+        ],
+		"description": [
+            "Creates an empty inventory of type InventoryType.CHEST with the specified size.",
+            "Creates an empty inventory of type InventoryType.CHEST with the specified size and title.",
+            "Creates an empty inventory with the specified type.",
+            "Creates an empty inventory with the specified type and title.\n\n Returns Inventory"
+        ]
+    },
+    "Drupi Server | create Map": {
+		"prefix": "server.createMap",
+		"body": "server.createMap(${1:\"World\"});",
+		"description": "Create a new map with an automatically assigned ID.\n\nReturns MapView"
+    },
+    "Drupi Server | create Merchant": {
+		"prefix": "server.createMerchant",
+		"body": "server.createMerchant(\"${1:\"Title\"}\");",
+		"description": "Creates an empty merchant.\n\nReturns Merchant"
+    },
+    "Drupi Server | create World": {
+		"prefix": "server.createWorld",
+		"body": "server.createWorld(${1:\"WorldCreator\"});",
+		"description": "Creates or loads a world with the given name using the specified options.\n\nReturns World"
+    },
+    "Drupi Server | dispatch Command​": {
+		"prefix": "server.dispatchCommand​",
+		"body": "server.dispatchCommand​(${1:\"CommandSender\"}, \"${2:\"Command line\"}\");",
+		"description": "Dispatches a command on this server, and executes it if found.\n\nReturns boolean"
+    },
+    "Drupi Server | get Advancement​": {
+		"prefix": "server.getAdvancement​",
+		"body": "server.getAdvancement​(${1:\"NamespacedKey\"});",
+		"description": "Get the advancement specified by this key.\n\nReturns Advancement"
+    },
+    "Drupi Server | get Allow End": {
+		"prefix": "server.getAllowEnd",
+		"body": "server.getAllowEnd();",
+		"description": "Gets whether this server allows the End or not.\n\nReturns boolean"
+    },
+    "Drupi Server | get Allow Flight": {
+		"prefix": "server.getAllowFlight​",
+		"body": "server.getAllowFlight​();",
+		"description": "Gets whether this server allows flying or not.\n\nReturns boolean"
+    },
+    "Drupi Server | get Allow Nether": {
+		"prefix": "server.getAllowNether",
+		"body": "server.getAllowNether();",
+		"description": "Gets whether this server allows the Nether or not.\n\nReturns boolean"
+    },
+    "Drupi Server | get Ambient Spawn Limit": {
+		"prefix": "server.getAmbientSpawnLimit",
+		"body": "server.getAmbientSpawnLimit​();",
+		"description": "Gets user-specified limit for number of ambient mobs that can spawn in a chunk.\n\nReturns Int"
+    },
+    "Drupi Server | get Animal Spawn Limit": {
+		"prefix": "server.getAnimalSpawnLimit",
+		"body": "server.getAnimalSpawnLimit​();",
+		"description": "Gets user-specified limit for number of animals that can spawn in a chunk.\n\nReturns Int"
+    },
+    "Drupi Server | get BanList": {
+		"prefix": "server.getBanlist",
+		"body": "server.getBanlist​(${1:\"Type\"});",
+        "description": "Gets a ban list for the supplied type.\n\nReturns Banlist"
+    },
+    "Drupi Server | get Banned Players": {
+		"prefix": "server.getBannedPlayers",
+		"body": "server.getBannedPlayers​();",
+        "description": "Gets a set containing all banned players.\n\nReturns Set<OfflinePlayer>"
+    },
+    "Drupi Server | get Boss Bar": {
+		"prefix": "server.getBossBar",
+		"body": [
+            "server.getBossBar​(${1:\"Type\"});",
+            "server.getBossBar​();"
+        ],
+        "description": "Gets an unmodifiable iterator through all persistent bossbars.\n\nReturns KeyedBossBar"
+    },
+    "Drupi Server | get Bukkit Version": {
+		"prefix": "server.getBukkitVersion",
+		"body": "server.getBukkitVersion​();",
+        "description": "Gets the Bukkit version that this server is running.\n\nReturns String"
+    },
+    "Drupi Server | get Command Aliases": {
+		"prefix": "server.getCommandAliases",
+		"body": "server.getCommandAliases​();",
+        "description": "Gets a list of command aliases defined in the server properties.\n\nReturns Map<String,String[]>"
+    },
+    "Drupi Server | get Connection Throttle​": {
+		"prefix": "server.getConnectionThrottle",
+		"body": "server.getConnectionThrottle​();",
+        "description": "Gets the value of the connection throttle setting.\n\nReturns long"
+    },
+    "Drupi Server | get Console Sender​": {
+		"prefix": "server.getConsoleSender",
+		"body": "server.getConsoleSender​();",
+        "description": "Gets a ConsoleCommandSender that may be used as an input source for this server.\n\nReturns ConsoleCommandSender"
+    },
+    "Drupi Server | get Default GameMode​": {
+		"prefix": "server.getDefaultGameMode",
+		"body": "server.getDefaultGameMode();",
+        "description": "Gets the default GameMode for new players.\n\nReturns GameMode"
+    },
+    "Drupi Server | get Entity​": {
+		"prefix": "server.getEntity",
+		"body": "server.getEntity(${1:\"uuid\"});",
+        "description": "Gets an entity on the server by its UUID.\n\nReturns Entity"
+    },
+    "Drupi Server | get Generate Structures​": {
+		"prefix": "server.getGenerateStructures",
+		"body": "server.getGenerateStructures();",
+        "description": "Get generate-structures setting.\n\nReturns boolean"
+    },
+    "Drupi Server | get Help Map​": {
+		"prefix": "server.getHelpMap",
+		"body": "server.getHelpMap();",
+        "description": "Gets the HelpMap providing help topics for this server.\n\nReturns HelpMap"
+    },
+    "Drupi Server | get Idle Timeout": {
+		"prefix": "server.getIdleTimeout",
+		"body": "server.getIdleTimeout();",
+        "description": "Gets the idle kick timeout.\n\nReturns int"
+    },
+    "Drupi Server | get Ip": {
+		"prefix": "server.getIp",
+		"body": "server.getIp();",
+        "description": "Get the IP that this server is bound to, or empty string if not specified.\n\nReturns String"
+    },
+    "Drupi Server | get Ip Bans": {
+		"prefix": "server.getIpBans",
+		"body": "server.getIpBans();",
+        "description": "Gets a set containing all current IPs that are banned.\n\nReturns Set<String>"
+    },
+    "Drupi Server | get Item Factory": {
+		"prefix": "server.getItemFactory",
+		"body": "server.getItemFactory();",
+        "description": "Gets the instance of the item factory (for ItemMeta).\n\nReturns ItemFactory"
+    },
+    "Drupi Server | get Logger": {
+		"prefix": "server.getLogger",
+		"body": "server.getLogger();",
+        "description": "Returns the primary logger associated with this server instance.\n\nReturns Logger"
+    },
+    "Drupi Server | get Loot Table": {
+		"prefix": "server.getLootTable",
+		"body": "server.getLootTable(${1:\"key\"});",
+        "description": "Gets the specified LootTable.\n\nReturns LootTable"
+    },
+    "Drupi Server | get Max Players": {
+		"prefix": "server.getMaxPlayers",
+		"body": "server.getMaxPlayers();",
+        "description": "Get the maximum amount of players which can login to this server.\n\nReturns int"
+    },
+    "Drupi Server | get Messenger": {
+		"prefix": "server.getMessenger",
+		"body": "server.getMessenger();",
+        "description": "Gets the Messenger responsible for this server.\n\nReturns Messenger"
+    },
+    "Drupi Server | get Monster Spawn Limit": {
+		"prefix": "server.getMonsterSpawnLimit",
+		"body": "server.getMonsterSpawnLimit();",
+        "description": "Gets user-specified limit for number of monsters that can spawn in a chunk.\n\nReturns int"
+    },
+    "Drupi Server | get Motd": {
+		"prefix": "server.getMotd",
+		"body": "server.getMotd();",
+        "description": "Gets the message that is displayed on the server list.\n\nReturns String"
+    },
+    "Drupi Server | get Name": {
+		"prefix": "server.getName",
+		"body": "server.getName();",
+        "description": "Gets the name of this server implementation.\n\nReturns String"
+    },
+    "Drupi Server | get Offline Player": {
+		"prefix": "server.getOfflinePlayer",
+		"body": "server.getOfflinePlayer(${1:\"id\"});",
+        "description": "Gets the player by the given UUID, regardless if they are offline or online.\n\nReturns OfflinePlayer"
+    },
+    "Drupi Server | get Offline Players": {
+		"prefix": "server.getOfflinePlayers",
+		"body": "server.getOfflinePlayers();",
+        "description": "Gets every player that has ever played on this server.\n\nReturns OfflinePlayer[]"
+    },
+    "Drupi Server | get Online Mode": {
+		"prefix": "server.getOnlineMode",
+		"body": "server.getOnlineMode();",
+        "description": "Gets whether the Server is in online mode or not.\n\nReturns boolean"
+    },
+    "Drupi Server | get Online Players​": {
+		"prefix": "server.getOnlinePlayers​",
+		"body": "server.getOnlinePlayers​();",
+        "description": "Gets a view of all currently logged in players.\n\nReturns Collection<? extends Player>"
+    },
+    "Drupi Server | get Operators": {
+		"prefix": "server.getOperators",
+		"body": "server.getOperators​();",
+        "description": "Gets a set containing all player operators.\n\nReturns Set<OfflinePlayer>"
+    },
+    "Drupi Server | get Player​": {
+		"prefix": "server.getPlayer​",
+        "body": [
+            "server.getPlayer​(\"${1:\"name\"}\");",
+            "server.getPlayer​(${1:\"id\"});"
+        ],
+        "description": "Gets a player object by the given username.\n\nReturns Player"
+    },
+    "Drupi Server | get Player Exact": {
+		"prefix": "server.getPlayerExact",
+		"body": "server.getPlayerExact(\"${1:\"Player Name\"}\");",
+        "description": "Gets the player with the exact given name, case insensitive.\n\nReturns Player"
+    },
+    "Drupi Server | get Plugin Command": {
+		"prefix": "server.getPluginCommand​",
+		"body": "server.getPluginCommand​(\"${1:\"Command\"}\");",
+        "description": "Gets a PluginCommand with the given name or alias.\n\nReturns PluginCommand"
+    },
+    "Drupi Server | get Plugin Manager": {
+		"prefix": "server.getPluginManager",
+		"body": "server.getPluginManager();",
+        "description": "Gets the plugin manager for interfacing with plugins.\n\nReturns PluginManager"
+    },
+    "Drupi Server | get Port": {
+		"prefix": "server.getPort",
+		"body": "server.getPort();",
+        "description": "Get the game port that the server runs on.\n\nReturns integer"
+    },
+    "Drupi Server | get Recipes For​": {
+		"prefix": "server.getRecipesFor​",
+		"body": "server.getRecipesFor​();",
+        "description": "Get a list of all recipes for a given item.\n\nReturns List<Recipe>"
+    },
+    "Drupi Server | get Scheduler": {
+		"prefix": "server.getScheduler",
+		"body": "server.getScheduler();",
+        "description": "Gets the scheduler for managing scheduled events.\n\nReturns BukkitScheduler"
+    },
+    "Drupi Server | get Scoreboard Manager": {
+		"prefix": "server.getScoreboardManager",
+		"body": "server.getScoreboardManager();",
+        "description": "Gets the instance of the scoreboard manager.\n\nReturns ScoreboardManager"
+    },
+    "Drupi Server | get Server Icon​": {
+		"prefix": "server.getServerIcon​",
+		"body": "server.getServerIcon​();",
+        "description": "Gets an instance of the server's default server-icon.\n\nReturns CachedServerIcon"
+    },
+    "Drupi Server | get Services Manager": {
+		"prefix": "server.getServicesManager",
+		"body": "server.getServicesManager();",
+        "description": "Gets a services manager.\n\nReturns ServicesManager"
+    },
+    "Drupi Server | get Shutdown Message​": {
+		"prefix": "server.getShutdownMessage​",
+		"body": "server.getShutdownMessage​();",
+        "description": "Gets the default message that is displayed when the server is stopped.\n\nReturns String"
+    },
+    "Drupi Server | get Spawn Radius": {
+		"prefix": "server.getSpawnRadius",
+		"body": "server.getSpawnRadius();",
+        "description": "Gets the radius, in blocks, around each worlds spawn point to protect.\n\nReturns integer"
+    },
+    "Drupi Server | get Tag​": {
+		"prefix": "server.getTag​",
+		"body": "server.getTag(\"${1:\"Registry\"}\", ${2:\"tag\"}, ${3:\"clazz\"});",
+        "description": "Gets a tag which has already been defined within the server.\n\nReturns <T extends Keyed>Tag<T>"
+    },
+    "Drupi Server | get Tags​": {
+		"prefix": "server.getTags​",
+		"body": "server.getTags(\"${1:\"Registry\"}\", ${2:\"clazz\"});",
+        "description": "Gets a all tags which have been defined within the server.\n\nReturns <T extends Keyed>Iterable<Tag<T>>"
+    },
+    "Drupi Server | get Ticks Per Animal Spawns​": {
+		"prefix": "server.getTicksPerAnimalSpawns​",
+		"body": "server.getTicksPerAnimalSpawns​();",
+        "description": "Gets default ticks per animal spawns value.\n\nReturns integer"
+    },
+    "Drupi Server | get Ticks Per Monster Spawns​": {
+		"prefix": "server.getTicksPerMonsterSpawns​",
+		"body": "server.getTicksPerMonsterSpawns​();",
+        "description": "Gets default ticks per monster spawns value.\n\nReturns integer"
+    },
+    "Drupi Server | get Update Folder": {
+		"prefix": "server.getUpdateFolder",
+		"body": "server.getUpdateFolder();",
+        "description": "Gets the name of the update folder.\n\nReturns string"
+    },
+    "Drupi Server | get Update Folder File": {
+		"prefix": "server.getUpdateFolderFile",
+		"body": "server.getUpdateFolderFile();",
+        "description": "Gets the update folder.\n\nReturns File"
+    },
+    "Drupi Server | get Version": {
+		"prefix": "server.getVersion",
+		"body": "server.getVersion();",
+        "description": "Gets the version string of this server implementation.\n\nReturns string"
+    },
+    "Drupi Server | get View Distance": {
+		"prefix": "server.getViewDistance",
+		"body": "server.getViewDistance();",
+        "description": "Get the view distance from this server.\n\nReturns int"
+    },
+    "Drupi Server | get Warning State": {
+		"prefix": "server.getWarningState",
+		"body": "server.getWarningState();",
+        "description": "Gets the current warning state for the server.\n\nReturns Warning.WarningState"
+    },
+    "Drupi Server | get Water Animal Spawn Limit": {
+		"prefix": "server.getWaterAnimalSpawnLimit​",
+		"body": "server.getWaterAnimalSpawnLimit​();",
+        "description": "Gets user-specified limit for number of water animals that can spawn in a chunk.\n\nReturns int"
+    },
+    "Drupi Server | get Whitelisted Players": {
+		"prefix": "server.getWhitelistedPlayers",
+		"body": "server.getWhitelistedPlayers​();",
+        "description": "Gets a list of whitelisted players.\n\nReturns Set<OfflinePlayer>"
+    },
+    "Drupi Server | get World​": {
+		"prefix": "server.getWorld​",
+        "body": [
+            "server.getWorld​(\"${1:\"name\"}\");",
+            "server.getWorld​(${1:\"uid\"});"
+        ],
+        "description": "Gets the world with the given name.\n\nReturns World"
+    },
+    "Drupi Server | get World​ Container": {
+		"prefix": "server.getWorld​Container",
+		"body": "server.getWorldContainer​(\"${1:\"name\"}\");",
+        "description": "Gets the folder that contains all of the various Worlds.\n\nReturns File"
+    },
+    "Drupi Server | get World​s": {
+		"prefix": "server.getWorld​s",
+		"body": "server.getWorlds​();",
+        "description": "Gets a list of all worlds on this server.\n\nReturns List<World>"
+    },
+    "Drupi Server | get World​ Type": {
+		"prefix": "server.getWorld​Type",
+		"body": "server.getWorldsType();",
+        "description": "Get world type (level-type setting) for default world.\n\nReturns String"
+    },
+    "Drupi Server | has Whitelist​": {
+		"prefix": "server.hasWhitelist​",
+		"body": "server.hasWhitelist​();",
+        "description": "Gets whether this server has a whitelist or not.\n\nReturns boolean"
+    },
+    "Drupi Server | is Hardcore​": {
+		"prefix": "server.isHardcore​",
+		"body": "server.isHardcore();",
+        "description": "Gets whether the server is in hardcore mode or not.\n\nReturns boolean"
+    },
+    "Drupi Server | is Primary Thread​": {
+		"prefix": "server.isPrimaryThread​",
+		"body": "server.isPrimaryThread​();",
+        "description": "Checks the current thread against the expected primary thread for the server.\n\nReturns boolean"
+    },
+    "Drupi Server | load Server Icon​": {
+		"prefix": "server.loadServerIcon​",
+		"body": "server.loadServerIcon​​(${1:\"image\"});",
+        "description": "Creates a cached server-icon for the specific image.\n\nReturns CachedServerIcon"
+    },
+    "Drupi Server | match Player": {
+		"prefix": "server.matchPlayer",
+		"body": "server.matchPlayer(\"{1:\"Player Name\"}\");",
+        "description": "Attempts to match any players with the given name, and returns a list of all possibly matches.\n\nReturns List<Player>"
+    },
+    "Drupi Server | recipe Iterator": {
+		"prefix": "server.recipeIterator",
+		"body": "server.recipeIterator();",
+        "description": "Get an iterator through the list of crafting recipes.\n\nReturns Iterator<Recipe>"
+    },
+    "Drupi Server | reload": {
+		"prefix": "server.reload",
+		"body": "server.reload();",
+        "description": "Reloads the server, refreshing settings and plugin information."
+    },
+    "Drupi Server | reload Data": {
+		"prefix": "server.reloadData",
+		"body": "server.reloadData();",
+        "description": "Reload only the Minecraft data for the server."
+    },
+    "Drupi Server | reload Whitelist": {
+		"prefix": "server.reloadWhitelist",
+		"body": "server.reloadWhitelist();",
+        "description": "Reloads the whitelist from disk."
+    },
+    "Drupi Server | remove BossBar": {
+		"prefix": "server.removeBossBar",
+		"body": "server.removeBossBar({1:\"NamespacedKey\"});",
+        "description": "Removes a KeyedBossBar specified by this key."
+    },
+    "Drupi Server | reset Recipes": {
+		"prefix": "server.resetRecipes",
+		"body": "server.resetRecipes();",
+        "description": "Resets the list of crafting recipes to the default."
+    },
+    "Drupi Server | save Players": {
+		"prefix": "server.savePlayers",
+		"body": "server.savePlayers();",
+        "description": "Writes loaded players to disk."
+    },
+    "Drupi Server | select Entities": {
+		"prefix": "server.selectEntities",
+		"body": "server.selectEntities({1:\"CommandSender\"}, \"{2:\"Selector\"}\");",
+        "description": "Selects entities using the given Vanilla selector."
+    },
+    "Drupi Server | set Default Gamemode": {
+		"prefix": "server.setDefaultGameMode​",
+		"body": "server.setDefaultGameMode​({1:\"mode\"});",
+        "description": "Sets the default GameMode for new players."
+    },
+    "Drupi Server | set Spawn Radius": {
+		"prefix": "server.setSpawnRadius",
+		"body": "server.setSpawnRadius({1:\"Integer\"});",
+        "description": "Sets the radius, in blocks, around each worlds spawn point to protect."
+    },
+    "Drupi Server | set Whitelist": {
+		"prefix": "server.setWhitelist​",
+		"body": "server.setWhitelist​({1:\"value\"});",
+        "description": "Sets the radius, in blocks, around each worlds spawn point to protect.."
+    },
+    "Drupi Server | shutdown": {
+		"prefix": "server.shutdown",
+		"body": "server.shutdown();",
+        "description": "Shutdowns the server, stopping everything."
+    },
+    "Drupi Server | spigot": {
+		"prefix": "server.spigot",
+		"body": "server.spigot();",
+        "description": "Returns Server.Spigot"
+    },
+    "Drupi Server | unban IP": {
+		"prefix": "server.unbanIP",
+		"body": "server.unbanIP(\"{1:\"address\"}\");",
+        "description": "Unbans the specified address from the server."
+    },
+    "Drupi Server | unload World": {
+		"prefix": "server.unloadWorld",
+        "body": [
+            "server.unbanWorld(\"{1:\"name\"}\", {2:\"save\"});",
+            "server.unbanWorld({1:\"world\"}, {2:\"save\"});"
+        ],
+        "description": [
+            "Unloads a world with the given name.\n\nReturns boolean",
+            "Unloads the given world.\n\nReturns boolean"
+        ]
+    },
+    "Drupi Server | get Listening Plugin Channels": {
+		"prefix": "server.getListeningPluginChannels",
+		"body": "server.getListeningPluginChannels();",
+        "description": "Gets a set containing all the Plugin Channels that this client is listening on.\n\nReturns Set<String>"
+    },
+    "Drupi Server | send Plugin Message": {
+		"prefix": "server.sendPluginMessage",
+		"body": "server.sendPluginMessage({1:\"Plugin\"}, \"{2:\"Channel\"}\", {3:\"(Byte[]) Message\"});",
+        "description": "Sends this recipient a Plugin Message on the specified outgoing channel.\nThe message may not be larger than Messenger.MAX_MESSAGE_SIZE bytes, and the plugin must be registered to send messages on the specified channel"
+    }
+}

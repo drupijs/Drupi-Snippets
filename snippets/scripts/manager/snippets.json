@@ -1,0 +1,122 @@
+{
+	"Drupi Manager | get Players": {
+		"prefix": "manager.getPlayers()",
+		"body": "manager.getPlayers()",
+		"description": "Returns integer (Player amount)"
+	},
+	"Drupi Manager | create Folder": {
+		"prefix": "manager.createFolder",
+		"body": "manager.createFolder(\"${1:\"Folder Path\"}\");",
+		"description": "Create a folder"
+	},
+	"Drupi Manager | get File": {
+		"prefix": "manager.getFile",
+		"body": "manager.getFile(\"${1:\"Folder\"}\", \"${1:\"File\"}\");",
+		"description": "Returns file"
+	},
+	"Drupi Manager | eval": {
+		"prefix": "manager.eval",
+		"body": "manager.eval(${1:\"Folder Path\"});",
+		"description": "Evaluate Code"
+	},
+	"Drupi Manager | Write to file": {
+		"prefix": "manager.writeToFile",
+		"body": "manager.writeToFile(${1:\"File\"}, \"${1:\"Content\"}\");",
+		"description": "Write to file"
+	},
+	"Drupi Manager | Read File": {
+		"prefix": "manager.readFile",
+		"body": "manager.readFile(${1:\"File\"});",
+		"description": "Returns file content (String)"
+	},
+	"Drupi Manager | get World": {
+		"prefix": "manager.getWorld",
+		"body": "manager.getWorld(\"${1:\"World Name\"}\");",
+		"description": "Returns world"
+	},
+	"Drupi Manager | create Config": {
+		"prefix": "manager.createConfig",
+		"body": "manager.createFolder(${1:\"File\"});",
+		"description": "Create a folder"
+	},
+	"Drupi Manager | new Location": {
+		"prefix": "manager.newLocation",
+		"body": "manager.newLocation(${1:\"X\"}, ${1:\"Y\"}, ${1:\"Z\"});",
+		"description": "Returns world"
+	},
+	"Drupi Manager | new Location World": {
+		"prefix": "manager.newLocationWorld",
+		"body": "manager.newLocationWorld(${1:\"WOrld\"}, ${2:\"X\"}, ${3:\"Y\"}, ${4:\"Z\"});",
+		"description": "Returns world"
+	},
+	"Drupi Manager | cancel Task": {
+		"prefix": "manager.cancelTask",
+		"body": "manager.cancelTask(${1:\"Task id\"});",
+		"description": "Cancel a bukkit task"
+	},
+	"Drupi Manager | getPlugin": {
+		"prefix": "manager.getPlugin",
+		"body": "manager.getPlugin(\"${1:\"Plugin Name\"}\");",
+		"description": "get Plugin"
+	},
+	"Drupi Manager | send Title": {
+		"prefix": "manager.sendTitle",
+		"body": "manager.sendTitle(${1:\"Player\"}, ${1:\"Title\"}, ${1:\"SubTitle\"}, ${1:\"FadeInt\"}, ${1:\"Stay\"}, ${1:\"FadeOut\"});",
+		"description": "Create a folder"
+	},
+	"Drupi Manager | send ActionBar": {
+		"prefix": "manager.sendActionBar",
+		"body": "manager.sendActionBar(${1:\"Player\"}\", ${2:\"Message\"}\");",
+		"description": "Send an actionbar to a given player"
+	},
+	"Drupi Manager | get TPS": {
+		"prefix": "manager.getTPS",
+		"body": "manager.getTPS();",
+		"description": "Returns TPS (string)"
+	},
+	"Drupi Manager | get CPU": {
+		"prefix": "manager.getCPU",
+		"body": "manager.getCPU();",
+		"description": "Returns CPU usage (double)"
+	},
+	"Drupi Manager | color": {
+		"prefix": "manager.color",
+		"body": "manager.color(${1:\"Title\"});",
+		"description": "Use color format code"
+	},
+	"Drupi Manager | time": {
+		"prefix": "manager.time",
+		"body": "manager.time(${1:\"Seconds\"});",
+		"description": "Returns time formatted as HH-mm-ss (string)"
+	},
+	"Drupi Manager | format": {
+		"prefix": "manager.format",
+		"body": "manager.format(${1:\"Message\"}, ${1:\"Arguments\"});",
+		"description": "Returns String.format(msg, args) (string)"
+	},
+	"Drupi Manager | strzero": {
+		"prefix": "manager.strzero",
+		"body": "manager.strzero(${1:\"Time\"});",
+		"description": "Returns String.valueOf(time) (string)"
+	},
+	"Drupi Manager | plugin": {
+		"prefix": "manager.plugin",
+		"body": "manager.plugin();",
+		"description": "Return MainPlugin"
+	},
+	"Drupi Manager | newByteArrayDataOutput": {
+		"prefix": "manager.newByteArrayDataOutput",
+		"body": "manager.newByteArrayDataOutput();",
+		"description": "Return ByteArrayDataOutput"
+	},
+	"Drupi Manager | rename Inventory": {
+		"prefix": "manager.renameInventory",
+		"body": "manager.renameInventory(${1:\"Player\"}, \n${1:\"New Inventory Name\"}\n);",
+		"description": "Renames player's current inventory name"
+	},
+	"Drupi Manager | kick Player": {
+		"prefix": "manager.kickPlayer",
+		"body": "manager.kickPlayer(${1:\"Player\"}, ${1:\"Reason\"});",
+		"description": "Kick a player"
+	}
+}

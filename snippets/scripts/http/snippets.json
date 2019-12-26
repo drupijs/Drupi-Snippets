@@ -1,0 +1,25 @@
+{
+	"Drupi HTTP | get": {
+		"prefix": "http.get",
+		"body": "http.get(\"${1:\"URL\"}\");",
+		"description": "Returns webpage content (string)"
+    },
+    "Drupi HTTP | post": {
+		"prefix": "http.post",
+		"body": [
+            "http.post(${1:\"URL\"}, ${2:\"JSON Content\"});",
+            "http.post(${1:\"URL\"}, ${2:\"String Content\"});"
+        ],
+		"description": "Kick a player"
+	},
+	"Drupi HTTP | post With Headers": {
+		"prefix": "http.postWithHeaders",
+		"body": "http.postWithHeaders(\"${1:\"URL\"}\", ${2:\"JSON Object headers\"}, ${3:\"JSON Content\"});",
+		"description": "Returns webpage content (string)"
+    },
+    "Drupi HTTP | get With Headers": {
+		"prefix": "http.getWithHeaders",
+		"body": "http.getWithHeaders(\"${1:\"URL\"}\", ${2:\"JSON Object headers\"});",
+		"description": "Returns webpage content (string)"
+    }
+}

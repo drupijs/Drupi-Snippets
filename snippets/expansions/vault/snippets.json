@@ -1,0 +1,249 @@
+{
+    "Drupi Vault | economy": {
+		"prefix": "Vault.economy",
+		"body": "Vault.economy();",
+		"description": "The main economy API.\n\nReturns Vault Economy Interface"
+    },
+    "Drupi Vault | economy | deposit Player": {
+		"prefix": "Vault.economy().depositPlayer",
+		"body": "Vault.economy().depositPlayer(${1:\"Player\"}, ${1:\"Double\"});",
+		"description": "Deposit money to a given player's balance"
+    },
+    "Drupi Vault | economy | withdraw Player": {
+		"prefix": "Vault.economy().withdrawPlayer",
+		"body": "Vault.economy().withdrawPlayer(${1:\"Player\"}, ${1:\"Double\"});",
+		"description": "Withdraw money from a given player's balance"
+    },
+    "Drupi Vault | economy | is Enabled": {
+		"prefix": "Vault.economy().isEnabled",
+		"body": "Vault.economy().isEnabled();",
+		"description": "Checks if economy method is enabled.\n\nReturns boolean"
+    },
+    "Drupi Vault | economy | get Name": {
+		"prefix": "Vault.economy().getName",
+		"body": "Vault.economy().getName();",
+		"description": "Gets name of economy method.\n\nReturns string"
+    },
+    "Drupi Vault | economy | has Bank Support": {
+		"prefix": "Vault.economy().hasBankSupport",
+		"body": "Vault.economy().hasBankSupport();",
+		"description": "Returns true if the given implementation supports banks.\n\nReturns boolean"
+    },
+    "Drupi Vault | economy | format": {
+		"prefix": "Vault.economy().format",
+		"body": "Vault.economy().format(${1:\"(Double) Amount\"});",
+		"description": "Format amount into a human readable String This provides translation into economy specific formatting to improve consistency between plugins.\n\nReturns string"
+    },
+    "Drupi Vault | economy | currency Name Plural": {
+		"prefix": "Vault.economy().currencyNamePlural",
+		"body": "Vault.economy().currencyNamePlural();",
+		"description": "Returns the name of the currency in plural form. If the economy being used does not support currency names then an empty string will be returned.\n\nReturns string"
+    },
+    "Drupi Vault | economy | currency Name Singular": {
+		"prefix": "Vault.economy().currencyNameSingular",
+		"body": "Vault.economy().currencyNameSingular();",
+		"description": "Returns the name of the currency in singular form. If the economy being used does not support currency names then an empty string will be returned.\n\nReturns string"
+    },
+    "Drupi Vault | economy | has Account": {
+		"prefix": "Vault.economy().hasAccount",
+		"body": [
+            "Vault.economy().hasAccount(\"{1:\"Player name\"}\");",
+            "Vault.economy().hasAccount({1:\"OfflinePlayer\"});"
+        ],
+		"description": "Checks if this player has an account on the server yet on the given world This will always return true if the player has joined the server at least once as all major economy plugins auto-generate a player account when the player joins the server.\n\nReturns boolean"
+    },
+    "Drupi Vault | economy | get Balance": {
+		"prefix": "Vault.economy().getBalance",
+		"body":[
+            "Vault.economy().getBalance(\"{1:\"Player name\"}\");",
+            "Vault.economy().getBalance({1:\"OfflinePlayer\"});",
+            "Vault.economy().getBalance(\"{1:\"Player name\"}\", \"{2:\"World name\"}\");",
+            "Vault.economy().getBalance({1:\"OfflinePlayer\"}, \"{2:\"World name\"}\");"
+        ],
+		"description": "Gets balance of a player\n\nReturns double"
+    },
+    "Drupi Vault | economy | has": {
+		"prefix": "Vault.economy().has",
+		"body":[
+            "Vault.economy().has(\"{1:\"Player name\"}\", {2:\"(Double) Amount\"});",
+            "Vault.economy().has({1:\"OfflinePlayer\"}, {2:\"(Double) Amount\"});",
+            "Vault.economy().has(\"{1:\"Player name\"}\", {2:\"(Double) Amount\"}, \"{3:\"World name\"}\");",
+            "Vault.economy().has({1:\"OfflinePlayer\"}, {2:\"(Double) Amount\"}, \"{3:\"World name\"}\");"
+        ],
+		"description": "Checks if the player account has the amount in a given world - DO NOT USE NEGATIVE AMOUNTS IMPLEMENTATION SPECIFIC - if an economy plugin does not support this the global balance will be returned.\n\nReturns boolean"
+    },
+    "Drupi Vault | economy | create Bank": {
+		"prefix": "Vault.economy().createBank",
+		"body":[
+            "Vault.economy().createBank(\"{1:\"Bank name\"}\", \"{2:\"Player name\"}\");",
+            "Vault.economy().createBank(\"{1:\"Bank name\"}\", {2:\"OfflinePlayer\"});"
+        ],
+		"description": "Creates a bank account with the specified name and the player as the owner.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | delete Bank": {
+		"prefix": "Vault.economy().deleteBank",
+		"body":[
+            "Vault.economy().deleteBank(\"{1:\"Bank name\"}\");",
+            "Vault.economy().deleteBank(\"{1:\"Bank name\"}\");"
+        ],
+		"description": "Deletes a bank account with the specified name.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | bank Balance": {
+		"prefix": "Vault.economy().bankBalance",
+		"body":[
+            "Vault.economy().bankBalance(\"{1:\"Bank name\"}\");",
+            "Vault.economy().bankBalance(\"{1:\"Bank name\"}\");"
+        ],
+		"description": "Returns the amount the bank has.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | bank Has": {
+		"prefix": "Vault.economy().bankHas",
+		"body": "Vault.economy().bankHas(\"{1:\"Bank name\"}\", {2:\"(Double) Amount\"});",
+		"description": "Returns true or false whether the bank has the amount specified - DO NOT USE NEGATIVE AMOUNTS.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | bank With draw": {
+		"prefix": "Vault.economy().bankWithdraw",
+		"body": "Vault.economy().bankWithdraw(\"{1:\"Bank name\"}\", {2:\"(Double) Amount\"});",
+		"description": "Withdraw an amount from a bank account - DO NOT USE NEGATIVE AMOUNTS.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | bank Deposit": {
+		"prefix": "Vault.economy().bankDeposit",
+		"body": "Vault.economy().bankDeposit(\"{1:\"Bank name\"}\", {2:\"(Double) Amount\"});",
+		"description": "Deposit an amount into a bank account - DO NOT USE NEGATIVE AMOUNTS.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | is Bank Owner": {
+		"prefix": "Vault.economy().isBankOwner",
+		"body": "Vault.economy().isBankOwner(\"{1:\"Bank name\"}\", {2:\"OfflinePlayer\"});",
+		"description": "Check if a player is the owner of a bank account.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | is Bank Member": {
+		"prefix": "Vault.economy().isBankMember",
+		"body": "Vault.economy().isBankMember(\"{1:\"Bank name\"}\", {2:\"OfflinePlayer\"});",
+		"description": "Check if the player is a member of the bank account.\n\nReturns EconomyResponse"
+    },
+    "Drupi Vault | economy | getBanks": {
+		"prefix": "Vault.economy().isBankMember",
+		"body": "Vault.economy().getBanks();",
+		"description": "Gets the list of banks.\n\nReturns List<String>"
+    },
+
+    "Drupi Vault | permission": {
+		"prefix": "Vault.permission",
+		"body": "Vault.permission();",
+		"description": "The main Permission API - allows for group and player based permission tests.\n\nReturns Vault Permission Interface"
+	},
+	"Drupi Vault | permission | get Groups": {
+		"prefix": "Vault.permission.getGroups",
+		"body": "Vault.permission.getGroups();",
+		"description": "Returns a list of all known groups"
+	},
+	"Drupi Vault | permission | get Name": {
+		"prefix": "Vault.permission.getName",
+		"body": "Vault.permission.getName();",
+		"description": "Gets name of permission method"
+	},
+	"Drupi Vault | permission | get Player Groups": {
+		"prefix": "Vault.permission.getPlayerGroups",
+		"body": [
+			"Vault.permission.getPlayerGroups(${1:\"Player\"});",
+			"Vault.permission.getPlayerGroups(\"${1:\"World\"}\", ${1:\"Player\"});"
+		],
+		"description": "Returns a list of world-specific groups that this player is currently in."
+	},
+	"Drupi Vault | permission | get Primary Group": {
+		"prefix": "Vault.permission.getPrimaryGroup",
+		"body": [
+			"Vault.permission.getPrimaryGroup(${1:\"Player\"});",
+			"Vault.permission.getPrimaryGroup(\"${1:\"World\"}\", ${1:\"Player\"});"
+		],
+		"description": "Get players primary group."
+	},
+	"Drupi Vault | permission | groupAdd": {
+		"prefix": "Vault.permission.groupAdd",
+		"body": "Vault.permission.groupAdd(\"${1:\"World\"}\", \"${1:\"Group\"}\", \"${1:\"Permission\"}\");",
+		"description": "Add permission to a group."
+	},
+	"Drupi Vault | permission | groupRemove": {
+		"prefix": "Vault.permission.groupRemove",
+		"body": "Vault.permission.groupRemove(\"${1:\"World\"}\", \"${1:\"Group\"}\", \"${1:\"Permission\"}\");",
+		"description": "Remove permission from a group."
+	},
+	"Drupi Vault | permission | playerAdd": {
+		"prefix": "Vault.permission.playerAdd",
+		"body": [
+			"Vault.permission.playerAdd(${1:\"Player\"}, \"${1:\"Permission\"}\");",
+			"Vault.permission.playerAdd(\"${1:\"World\"}\", ${1:\"Player\"}, \"${1:\"Permission\"}\");"
+			],
+		"description": "Add permission to a player."
+	},
+	"Drupi Vault | permission | playerAddGroup": {
+		"prefix": "Vault.permission.playerAddGroup",
+		"body": [
+			"Vault.permission.playerAddGroup(${1:\"Player\"}, \"${1:\"Group\"}\");",
+			"Vault.permission.playerAddGroup(\"${1:\"World\"}\", ${1:\"Player\"}, \"${1:\"Group\"}\");"
+			],
+		"description": "Add player to a group."
+	},
+	"Drupi Vault | permission | playerRemove": {
+		"prefix": "Vault.permission.playerRemove",
+		"body": [
+			"Vault.permission.playerRemove(${1:\"Player\"}, \"${1:\"Permission\"}\");",
+			"Vault.permission.playerRemove(\"${1:\"World\"}\", ${1:\"Player\"}, \"${1:\"Permission\"}\");"
+			],
+		"description": "Remove permission from a player."
+	},
+	"Drupi Vault | permission | playerRemoveGroup": {
+		"prefix": "Vault.permission.playerRemoveGroup",
+		"body": [
+			"Vault.permission.playerRemoveGroup(${1:\"Player\"}, \"${1:\"Group\"}\");",
+			"Vault.permission.playerRemoveGroup(\"${1:\"World\"}\", ${1:\"Player\"}, \"${1:\"Group\"}\");"
+			],
+		"description": "Remove player from a group."
+	},
+	
+    "Drupi Vault | chat": {
+		"prefix": "Vault.chat",
+		"body": "Vault.chat();",
+		"description": "The main Chat API - allows for Prefix/Suffix nodes along with generic Info nodes if the linked Chat system supports them.\n\nReturns Vault Chat Interface"
+    },
+    "Drupi Vault | chat | get Group Prefix": {
+		"prefix": "Vault.chat.getGroupPrefix",
+		"body": "Vault.chat.getGroupPrefix(\"${1:\"World\"}\",\"${1:\"Group\"}\");",
+		"description": "Get the group prefix"
+    },
+    "Drupi Vault | chat | get Group Suffix": {
+		"prefix": "Vault.chat.getGroupSuffix",
+		"body": "Vault.chat.getGroupSuffix(\"${1:\"World\"}\",\"${1:\"Group\"}\");",
+		"description": "Get the group suffix "
+	},
+	"Drupi Vault | chat | set Group Prefix": {
+		"prefix": "Vault.chat.setGroupPrefix",
+		"body": "Vault.chat.setGroupPrefix(\"${1:\"World\"}\", \"${1:\"Group\"}\", \"${1:\"Prefix\"}\");",
+		"description": "Set the group prefix"
+	},
+	"Drupi Vault | chat | set Group Suffix": {
+		"prefix": "Vault.chat.setGroupSuffix",
+		"body": "Vault.chat.setGroupSuffix(\"${1:\"World\"}\", \"${1:\"Group\"}\", \"${1:\"Prefix\"}\");",
+		"description": "Set the group suffix"
+    },
+    "Drupi Vault | chat | get Player Prefix": {
+		"prefix": "Vault.chat.getPlayerPrefix",
+		"body": "Vault.chat.getPlayerPrefix(${1:\"Player\"});",
+		"description": "Get the player prefix"
+    },
+    "Drupi Vault | chat | get Player Suffix": {
+		"prefix": "Vault.chat.getPlayerSuffix",
+		"body": "Vault.chat.getPlayerSuffix(${1:\"Player\"});",
+		"description": "Get the player suffix"
+	},
+	"Drupi Vault | chat | set Player Prefix": {
+		"prefix": "Vault.chat.setPlayerPrefix",
+		"body": "Vault.chat.setPlayerPrefix(${1:\"Player\"}, \"${1:\"Prefix\"}\");",
+		"description": "Set the player prefix"
+	},
+	"Drupi Vault | chat | set Player Suffix": {
+		"prefix": "Vault.chat.setPlayerPrefix",
+		"body": "Vault.chat.setPlayerPrefix(${1:\"Player\"}, \"${1:\"Suffix\"}\");",
+		"description": "Set the player suffix"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "Drupi Console | log": {
+		"prefix": "console.log",
+		"body": "console.log(\"${1:\"Info\"}\");",
+		"description": "Log an INFO message"
+    },
+    "Drupi Console | warn": {
+		"prefix": "console.warn",
+		"body": "console.warn(\"${1:\"Info\"}\"});",
+		"description": "Log an Warn message"
+    }
+}
