@@ -11,7 +11,7 @@
 	},
 	"Drupi Manager | get File": {
 		"prefix": "manager.getFile",
-		"body": "manager.getFile(\"${1:Folder}\", \"${1:File}\");",
+		"body": "manager.getFile(\"${1:Folder}\", \"${2:File}\");",
 		"description": "Returns file"
 	},
 	"Drupi Manager | eval": {
@@ -21,7 +21,7 @@
 	},
 	"Drupi Manager | Write to file": {
 		"prefix": "manager.writeToFile",
-		"body": "manager.writeToFile(${1:File}, \"${1:Content}\");",
+		"body": "manager.writeToFile(${1:File}, \"${2:Content}\");",
 		"description": "Write to file"
 	},
 	"Drupi Manager | Read File": {
