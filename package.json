@@ -2,7 +2,12 @@
     "name": "drupi-snippets",
     "displayName": "Drupi-Snippets",
     "description": "Native Drupi snippets support for VSCode",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "keywords": [
+        "Drupi",
+        "Stacket"
+    ],
+    "icon": "images/drupi.png",
     "publisher": "Stacket",
     "author": {
         "name": "Alexander Møller",

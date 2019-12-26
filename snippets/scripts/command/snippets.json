@@ -1,7 +1,7 @@
 {
 	"Drupi Command | Create": {
 		"prefix": "command.create",
-		"body": "command.create(\"${1:Command Name}\", \"${2:Command Prefix}\", \"${3:Command Description}\", ${4:(sender, args) => {\n\t$5\n});",
+		"body": "command.create(\"${1:Command Name}\", \"${2:Command Prefix}\", \"${3:Command Description}\", ${4:(sender, args) => {\n$5\n });",
 		"description": "Register a new command within Drupi"
 	},
 	"Drupi Command | is Console": {
