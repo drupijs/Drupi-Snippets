@@ -1,77 +1,77 @@
 {
     "Drupi TitleManager | add Animation": {
 		"prefix": "TitleManager.addAnimation",
-		"body": "TitleManager.addAnimation(\"${1:\"Animation id\"}\", ${2:\"Animation\"});",
+		"body": "TitleManager.addAnimation(\"${1:Animation id}\", ${2:Animation});",
 		"description": "Adds an animation to the plugin."
     },
     "Drupi TitleManager | clear Actionbar": {
 		"prefix": "TitleManager.clearActionbar",
-		"body": "TitleManager.clearActionbar(${1:\"Player\"});",
+		"body": "TitleManager.clearActionbar(${1:Player});",
 		"description": "Removes an actionbar message that might be on the player's screen."
     },
     "Drupi TitleManager | clear Subtitle": {
 		"prefix": "TitleManager.clearSubtitle",
-		"body": "TitleManager.clearSubtitle(${1:\"Player\"});",
+		"body": "TitleManager.clearSubtitle(${1:Player});",
 		"description": "Removes a subtitle that might be on the player's screen."
     },
     "Drupi TitleManager | clear Title": {
 		"prefix": "TitleManager.clearTitle",
-		"body": "TitleManager.clearTitle(${1:\"Player\"});",
+		"body": "TitleManager.clearTitle(${1:Player});",
 		"description": "Removes a title that might be on the player's screen."
     },
     "Drupi TitleManager | clear Titles": {
 		"prefix": "TitleManager.clearTitles",
-		"body": "TitleManager.clearTitles(${1:\"Player\"});",
+		"body": "TitleManager.clearTitles(${1:Player});",
 		"description": "Removes a title and a subtitle that might be on the player's screen."
     },
     "Drupi TitleManager | contains Animation": {
 		"prefix": "TitleManager.containsAnimation",
-		"body": "TitleManager.containsAnimation(\"${1:\"Text\"}\", \"${1:\"Animation\"}\");",
+		"body": "TitleManager.containsAnimation(\"${1:Text}\", \"${1:Animation}\");",
 		"description": "Checks if the input text contains the pattern ${my-animation} or the pattern ${my-animation:parameter} where my-animation is the animation parameter.\n\nReturns boolean"
     },
     "Drupi TitleManager | contains Animations": {
 		"prefix": "TitleManager.containsAnimations",
-		"body": "TitleManager.containsAnimations(\"${1:\"Text\"}\", \"${1:\"Animation\"}\");",
+		"body": "TitleManager.containsAnimations(\"${1:Text}\", \"${1:Animation}\");",
 		"description": "Checks if the input text contains any registered animations following the pattern ${my-animation} as well as any animations or scripts following the pattern ${my-animation:my-parameter}. Though the animation or script does need to be registered with the plugin.\n\nReturns boolean"
     },
     "Drupi TitleManager | contains Placeholder": {
 		"prefix": "TitleManager.containsPlaceholder",
-		"body": "TitleManager.containsPlaceholder(\"${1:\"Text\"}\", \"${2:\"Placeholder\"}\");",
+		"body": "TitleManager.containsPlaceholder(\"${1:Text}\", \"${2:Placeholder}\");",
 		"description": "Checks if the input text contains the pattern %{my-placeholder} or the pattern %{my-placeholder:parameter} where my-placeholder is the placeholder parameter.\n\nReturns boolean"
     },
     "Drupi TitleManager | contains Placeholders": {
 		"prefix": "TitleManager.containsPlaceholders",
-		"body": "TitleManager.containsPlaceholders(\"${1:\"Text\"}\");",
+		"body": "TitleManager.containsPlaceholders(\"${1:Text}\");",
 		"description": "Checks if the input text contains any registered placeholders following the pattern %{my-placeholder} as well as any placeholders following the pattern %{my-placeholder:my-parameter}. Though the placeholder does need to be registered with the plugin.\n\nReturns boolean"
     },
     "Drupi TitleManager | create Animation Frame": {
 		"prefix": "TitleManager.createAnimationFrame",
-		"body": "TitleManager.createAnimationFrame(\"${1:\"Text\"}\", ${2:\"FadeIn\"}, ${3:\"Stay\"}, ${3:\"fadeOut\"});",
+		"body": "TitleManager.createAnimationFrame(\"${1:Text}\", ${2:FadeIn}, ${3:Stay}, ${3:fadeOut});",
 		"description": "Creates an interface Animation from the input text and timings values.\n\nReturns AnimationFrame"
     },
     "Drupi TitleManager | from JavaScript": {
 		"prefix": "TitleManager.fromJavaScript",
-		"body": "TitleManager.fromJavaScript(\"${1:\"Name\"}\", \"${2:\"Input\"}\");",
+		"body": "TitleManager.fromJavaScript(\"${1:Name}\", \"${2:Input}\");",
 		"description": "Creates an interface Animation from the name of a loaded JavaScript animation, with the given input text.\n\nReturns Animation"
     },
     "Drupi TitleManager | from Text": {
 		"prefix": "TitleManager.fromText",
-		"body": "TitleManager.fromText(\"${1:\"Text...\"}\");",
+		"body": "TitleManager.fromText(\"${1:Text...}\");",
 		"description": "Creates an animation from an Array of String.\n\nReturns Animation"
     },
     "Drupi TitleManager | from Text File": {
 		"prefix": "TitleManager.fromTextFile",
-		"body": "TitleManager.fromTextFile(${1:\"File\"});",
+		"body": "TitleManager.fromTextFile(${1:File});",
 		"description": "Creates an animation from a File. Each line of the file will be converted to an Array and fed into the .fromText\n\nReturns Animation"
     },
     "Drupi TitleManager | get Footer": {
 		"prefix": "TitleManager.getFooter",
-		"body": "TitleManager.getFooter(${1:\"Player\"});",
+		"body": "TitleManager.getFooter(${1:Player});",
 		"description": "Gets the player list footer that is currently being displayed for the given Player.\n\nReturns String"
     },
     "Drupi TitleManager | get Header": {
 		"prefix": "TitleManager.getHeader",
-		"body": "TitleManager.getHeader(${1:\"Player\"});",
+		"body": "TitleManager.getHeader(${1:Player});",
 		"description": "Gets the player list header that is currently being displayed for the given Player.\n\nReturns String"
     },
     "Drupi TitleManager | get Registered Animations": {
@@ -86,88 +86,88 @@
     },
     "Drupi TitleManager | get Scoreboard Title": {
 		"prefix": "TitleManager.getScoreboardTitle",
-		"body": "TitleManager.getScoreboardTitle(${1:\"Player\"});",
+		"body": "TitleManager.getScoreboardTitle(${1:Player});",
 		"description": "Gets the title of the given Player's scoreboard.\n\nReturns string"
     },
     "Drupi TitleManager | get Scoreboard Value": {
 		"prefix": "TitleManager.getScoreboardValue",
-		"body": "TitleManager.getScoreboardValue(${1:\"Player\"}, ${1:\"Index\"});",
+		"body": "TitleManager.getScoreboardValue(${1:Player}, ${1:Index});",
 		"description": "Gets the text value of the given Player's scoreboard at the given index.\n\nReturns String"
     },
     "Drupi TitleManager | give Scoreboard": {
 		"prefix": "TitleManager.giveScoreboard",
-		"body": "TitleManager.giveScoreboard(${1:\"Player\"});",
+		"body": "TitleManager.giveScoreboard(${1:Player});",
 		"description": "Gives the Player a scoreboard as a sidebar."
     },
     "Drupi TitleManager | has Scoreboard": {
 		"prefix": "TitleManager.hasScoreboard",
-		"body": "TitleManager.hasScoreboard(${1:\"Player\"});",
+		"body": "TitleManager.hasScoreboard(${1:Player});",
 		"description": "Checks whether or not the given Player has a scoreboard assigned.\n\nReturns Boolean"
     },
     "Drupi TitleManager | remove Animation": {
 		"prefix": "TitleManager.removeAnimation",
-		"body": "TitleManager.removeAnimation(\"${1:\"Animation Id\"}\");",
+		"body": "TitleManager.removeAnimation(\"${1:Animation Id}\");",
 		"description": "Removes an animation from the plugin."
     },
     "Drupi TitleManager | remove Scoreboard": {
 		"prefix": "TitleManager.removeScoreboard",
-		"body": "TitleManager.removeScoreboard(${1:\"Player\"});",
+		"body": "TitleManager.removeScoreboard(${1:Player});",
 		"description": "Removes the scoreboard sidebar from the given player."
     },
     "Drupi TitleManager | remove Scoreboard Value": {
 		"prefix": "TitleManager.removeScoreboardValue",
-		"body": "TitleManager.removeScoreboardValue(${1:\"Player\"}, ${2:\"Index\"});",
+		"body": "TitleManager.removeScoreboardValue(${1:Player}, ${2:Index});",
 		"description": "Removes the text value of the given Player's scoreboardat the given index."
     },
     "Drupi TitleManager | replace Text": {
 		"prefix": "TitleManager.replaceText",
-		"body": "TitleManager.replaceText(${1:\"Player\"}, \"${2:\"Text\"}\");",
+		"body": "TitleManager.replaceText(${1:Player}, \"${2:Text}\");",
 		"description": "Replaces the text with any placeholders that follow the pattern %{my-placeholder} as well as any placeholders following the pattern %{my-placeholder:my-parameter}.\n\nReturns string"
     },
     "Drupi TitleManager | send Actionbar": {
 		"prefix": "TitleManager.sendActionbar",
-		"body": "TitleManager.sendActionbar(${1:\"Player\"}, \"${2:\"Text\"}\");",
+		"body": "TitleManager.sendActionbar(${1:Player}, \"${2:Text}\");",
 		"description": "Sends an actionbar message to the Player."
     },
     "Drupi TitleManager | send Actionbar With Placeholders": {
 		"prefix": "TitleManager.sendActionbarWithPlaceholders",
-		"body": "TitleManager.sendActionbarWithPlaceholders(${1:\"Player\"}, \"${2:\"Text\"}\");",
+		"body": "TitleManager.sendActionbarWithPlaceholders(${1:Player}, \"${2:Text}\");",
 		"description": "Sends an actionbar message to the Player where all placeholders are replaced."
     },
     "Drupi TitleManager | send Subtitle": {
 		"prefix": "TitleManager.sendSubtitle",
         "body": [
-            "TitleManager.sendSubtitle(${1:\"Player\"}, \"${2:\"Subtitle\"}\");",
-            "TitleManager.sendSubtitle(${1:\"Player\"}, \"${2:\"Subtitle\"}\", ${3:\"fadeIn\"}, ${4:\"stay\"}, ${5:\"fadeOut\"});"
+            "TitleManager.sendSubtitle(${1:Player}, \"${2:Subtitle}\");",
+            "TitleManager.sendSubtitle(${1:Player}, \"${2:Subtitle}\", ${3:fadeIn}, ${4:stay}, ${5:fadeOut});"
         ],
 		"description": "Sends a subtitle message to the given Player. This will also use the last sent timings."
     },
     "Drupi TitleManager | send Subtitle With Placeholders": {
 		"prefix": "TitleManager.sendSubtitleWithPlaceholders",
 		"body": [
-            "TitleManager.sendSubtitleWithPlaceholders(${1:\"Player\"}, \"${2:\"Text\"}\");",
-            "TitleManager.sendSubtitleWithPlaceholders(${1:\"Player\"}, \"${2:\"Text\"}\", ${3:\"fadeIn\"}, ${4:\"stay\"}, ${5:\"fadeOut\"});"
+            "TitleManager.sendSubtitleWithPlaceholders(${1:Player}, \"${2:Text}\");",
+            "TitleManager.sendSubtitleWithPlaceholders(${1:Player}, \"${2:Text}\", ${3:fadeIn}, ${4:stay}, ${5:fadeOut});"
         ],
 		"description": "Sends an subtitle message to the Player where all placeholders are replaced."
     },
     "Drupi TitleManager | send Timings": {
 		"prefix": "TitleManager.sendTimings",
-		"body": "TitleManager.sendTimings(${1:\"Player\"}, ${2:\"fadeIn\"}, ${3:\"stay\"}, ${4:\"fadeOut\");",
+		"body": "TitleManager.sendTimings(${1:Player}, ${2:fadeIn}, ${3:stay}, ${4:fadeOut);",
 		"description": "Sets the timings for all of the next titles and subtitles sent to the Player."
     },
     "Drupi TitleManager | send Title": {
 		"prefix": "TitleManager.sendTitle",
         "body": [
-            "TitleManager.sendSubtitle(${1:\"Player\"}, \"${2:\"Title\"}\");",
-            "TitleManager.sendSubtitle(${1:\"Player\"}, \"${2:\"Title\"}\", ${3:\"fadeIn\"}, ${4:\"stay\"}, ${5:\"fadeOut\"});"
+            "TitleManager.sendSubtitle(${1:Player}, \"${2:Title}\");",
+            "TitleManager.sendSubtitle(${1:Player}, \"${2:Title}\", ${3:fadeIn}, ${4:stay}, ${5:fadeOut});"
         ],
 		"description": "Sends a title message to the given Player with the given title. This will also use the last sent timings."
     },
     "Drupi TitleManager | send Title With Placeholders": {
 		"prefix": "TitleManager.sendTitleWithPlaceholders",
 		"body": [
-            "TitleManager.sendTitleWithPlaceholders(${1:\"Player\"}, \"${2:\"Text\"}\");",
-            "TitleManager.sendTitleWithPlaceholders(${1:\"Player\"}, \"${2:\"Title\"}\", ${3:\"fadeIn\"}, ${4:\"stay\"}, ${5:\"fadeOut\"});"
+            "TitleManager.sendTitleWithPlaceholders(${1:Player}, \"${2:Text}\");",
+            "TitleManager.sendTitleWithPlaceholders(${1:Player}, \"${2:Title}\", ${3:fadeIn}, ${4:stay}, ${5:fadeOut});"
         ],
 		"description": [
             "Sends a title message to the given Player where all placeholders have been replaced. This will also use the last sent timings..",
@@ -177,16 +177,16 @@
     "Drupi TitleManager | sendTitles": {
 		"prefix": "TitleManager.sendTitles",
         "body": [
-            "TitleManager.sendTitles(${1:\"Player\"}, \"${2:\"Title\"}\", \"${2:\"Subtitle\"}\");",
-            "TitleManager.sendTitles(${1:\"Player\"}, \"${2:\"Title\"}\", \"${3:\"Title\"}\", ${4:\"fadeIn\"}, ${5:\"stay\"}, ${6:\"fadeOut\"});"
+            "TitleManager.sendTitles(${1:Player}, \"${2:Title}\", \"${2:Subtitle}\");",
+            "TitleManager.sendTitles(${1:Player}, \"${2:Title}\", \"${3:Title}\", ${4:fadeIn}, ${5:stay}, ${6:fadeOut});"
         ],
 		"description": "Sends a title and a subtitle message to the given Player with the given timings."
     },
     "Drupi TitleManager | send Titles With Placeholder": {
 		"prefix": "TitleManager.sendTitlesWithPlaceholder",
         "body": [
-            "TitleManager.sendTitlesWithPlaceholder(${1:\"Player\"}, \"${2:\"Title\"}\");",
-            "TitleManager.sendTitlesWithPlaceholder(${1:\"Player\"}, \"${2:\"Title\"}\", ${3:\"fadeIn\"}, ${4:\"stay\"}, ${5:\"fadeOut\"});"
+            "TitleManager.sendTitlesWithPlaceholder(${1:Player}, \"${2:Title}\");",
+            "TitleManager.sendTitlesWithPlaceholder(${1:Player}, \"${2:Title}\", ${3:fadeIn}, ${4:stay}, ${5:fadeOut});"
         ],
 		"description": [
             "Sends a title and a subtitle message to the given Player where all placeholders are replaced.",
@@ -195,52 +195,52 @@
     },
     "Drupi TitleManager | set Footer": {
 		"prefix": "TitleManager.setFooter",
-		"body": "TitleManager.setFooter(${1:\"Player\"}, \"${2:\"Text\"}\");",
+		"body": "TitleManager.setFooter(${1:Player}, \"${2:Text}\");",
 		"description": "Sets the player list footer for the given Player."
     },
     "Drupi TitleManager | set Footer With Placeholders": {
 		"prefix": "TitleManager.setFooterWithPlaceholders",
-		"body": "TitleManager.setFooterWithPlaceholders(${1:\"Player\"}, \"${2:\"Text\"}\");",
+		"body": "TitleManager.setFooterWithPlaceholders(${1:Player}, \"${2:Text}\");",
 		"description": "Sets the player list footer for the given Player where all placeholders are replaced."
     },
     "Drupi TitleManager | set Header": {
 		"prefix": "TitleManager.setHeader",
-		"body": "TitleManager.setHeader(${1:\"Player\"}, \"${2:\"Text\"}\");",
+		"body": "TitleManager.setHeader(${1:Player}, \"${2:Text}\");",
 		"description": "Set the player list header for the given Player."
     },
     "Drupi TitleManager | set Header With Placeholders": {
 		"prefix": "TitleManager.setHeaderWithPlaceholders",
-		"body": "TitleManager.setHeaderWithPlaceholders(${1:\"Player\"}, \"${2:\"Text\"}\");",
+		"body": "TitleManager.setHeaderWithPlaceholders(${1:Player}, \"${2:Text}\");",
 		"description": "Sets the player list header for the given Player where all placeholders are replaced."
     },
     "Drupi TitleManager | set Header And Footer": {
 		"prefix": "TitleManager.setHeaderAndFooter",
-		"body": "TitleManager.setHeaderAndFooter(${1:\"Player\"}, \"${2:\"Header Text\"}\", \"${3:\"Footer Text\"}\");",
+		"body": "TitleManager.setHeaderAndFooter(${1:Player}, \"${2:Header Text}\", \"${3:Footer Text}\");",
 		"description": "Sets the player list header and footer for the given Player."
     },
     "Drupi TitleManager | set Header And Footer With Placeholders": {
 		"prefix": "TitleManager.setHeaderWithPlaceholders",
-		"body": "TitleManager.setHeaderWithPlaceholders(${1:\"Player\"}, \"${2:\"Header Text\"}\", \"${3:\"Footer Text\"}\");",
+		"body": "TitleManager.setHeaderWithPlaceholders(${1:Player}, \"${2:Header Text}\", \"${3:Footer Text}\");",
 		"description": "Sets the player list header and footer for the given Player where all placeholders are replaced."
     },
     "Drupi TitleManager | set Scoreboard Title": {
 		"prefix": "TitleManager.setScoreboardTitle",
-		"body": "TitleManager.setScoreboardTitle(${1:\"Player\"}, \"${2:\"fadeIn\"}\");",
+		"body": "TitleManager.setScoreboardTitle(${1:Player}, \"${2:fadeIn}\");",
 		"description": "Set the player list header for the given Player."
     },
     "Drupi TitleManager | set Scoreboard Title With Placeholders": {
 		"prefix": "TitleManager.setScoreboardTitleWithPlaceholders",
-		"body": "TitleManager.setScoreboardTitleWithPlaceholders(${1:\"Player\"}, \"${2:\"Title\"}\");",
+		"body": "TitleManager.setScoreboardTitleWithPlaceholders(${1:Player}, \"${2:Title}\");",
 		"description": "Sets the title of the given Player's scoreboard, if they have one assigned."
     },
     "Drupi TitleManager | set Scoreboard Value": {
 		"prefix": "TitleManager.setScoreboardValue",
-		"body": "TitleManager.setScoreboardValue(${1:\"Player\"}, ${2:\"Score\"}, \"${3:\"Text\"}\");",
+		"body": "TitleManager.setScoreboardValue(${1:Player}, ${2:Score}, \"${3:Text}\");",
 		"description": "Sets the text value of the given Player's scoreboard at the given index."
     },
     "Drupi TitleManager | set Scoreboard Value With Placeholders": {
 		"prefix": "TitleManager.setScoreboardValue",
-		"body": "TitleManager.setScoreboardValue(${1:\"Player\"}, ${2:\"Score\"}, \"${3:\"Text\"}\");",
+		"body": "TitleManager.setScoreboardValue(${1:Player}, ${2:Score}, \"${3:Text}\");",
 		"description": "Sets the text value of the given Player's scoreboard at the given index where all placeholders are replaced."
     }
 }

@@ -11,32 +11,32 @@
     },
     "Drupi Material | set Lore": {
 		"prefix": "material.setLore",
-		"body": "material.setLore(${1:\"ItemStack\"}, ${2:\"JSON Array\"});",
+		"body": "material.setLore(${1:ItemStack}, ${2:JSON Array});",
 		"description": "Returns Material"
     },
     "Drupi Material | add Enchantment": {
 		"prefix": "material.addEnchantment",
-		"body": "material.addEnchantment(${1:\"ItemStack\"}, ${1:\"Enchantment\"}, ${1:\"lvl\"});",
+		"body": "material.addEnchantment(${1:ItemStack}, ${1:Enchantment}, ${1:lvl});",
 		"description": "Add Enchantment to material"
     },
     "Drupi Material | get Wool Colored": {
 		"prefix": "material.getWoolColored",
-		"body": "material.getWoolColored(${1:\"Color\"});",
+		"body": "material.getWoolColored(${1:Color});",
 		"description": "Returns colored wool (Itemstack)"
     },
     "Drupi Material | new ItemStack": {
 		"prefix": "material.newItemStack",
-		"body": "material.newItemStack(${1:\"Material\"});",
+		"body": "material.newItemStack(${1:Material});",
 		"description": "Create ItemStack"
     },
     "Drupi Material | new ItemStackWithData": {
 		"prefix": "material.newItemStackWithData",
-		"body": "material.newItemStackWithData(${1:\"Material\"}, ${1:\"data\"});",
+		"body": "material.newItemStackWithData(${1:Material}, ${1:data});",
 		"description": "Create ItemStack with data"
     },
     "Drupi Material | get Color": {
 		"prefix": "material.getColor",
-		"body": "material.getColor(\"${1:\"Name\"}\");",
+		"body": "material.getColor(\"${1:Name}\");",
 		"description": "Returns color"
     }
 }

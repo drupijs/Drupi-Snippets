@@ -4,7 +4,7 @@
 		"prefix": "express.New",
 		"body": [
             "express.New();",
-            "express.New(\"${1:\"Hostname\"}\");"
+            "express.New(\"${1:Hostname}\");"
         ],
 		"description": "Returns Express instance\n\nSee more at https://github.com/Simonwep/java-express"
     }

@@ -6,22 +6,22 @@
     },
     "Drupi Scoreboard | new Display": {
 		"prefix": "scoreboard.newDisplay",
-		"body": "scoreboard.newDisplay(${1:\"scoreboard\"}, \"${2:\"title\"}\");",
+		"body": "scoreboard.newDisplay(${1:scoreboard}, \"${2:title}\");",
 		"description": "Create new Display object "
     },
     "Drupi Scoreboard | set Line": {
 		"prefix": "scoreboard.setLine",
-		"body": "scoreboard.setLine(${1:\"Scoreboard\"}, \"${2:\"Text\"}\", ${3:\"Integer\"});",
+		"body": "scoreboard.setLine(${1:Scoreboard}, \"${2:Text}\", ${3:Integer});",
 		"description": "Sets scoreboard text at given score"
     },
     "Drupi Scoreboard | set": {
 		"prefix": "scoreboard.set",
-		"body": "scoreboard.set(${1:\"player\"}, ${2:\"Scoreboard\"});",
+		"body": "scoreboard.set(${1:player}, ${2:Scoreboard});",
 		"description": "Set scoreboard for the given player"
     },
     "Drupi Scoreboard | remove": {
 		"prefix": "scoreboard.remove",
-		"body": "scoreboard.remove(${1:\"player\"});",
+		"body": "scoreboard.remove(${1:player});",
 		"description": "Removes the scoreboard for the given player"
     }
 }

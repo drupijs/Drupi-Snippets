@@ -1,7 +1,7 @@
 {
     "Drupi Server | addRecipe": {
 		"prefix": "server.addRecipe",
-		"body": "server.addRecipe(${1:\"Recipe\"});",
+		"body": "server.addRecipe(${1:Recipe});",
 		"description": "Adds a recipe to the crafting manager.\n\nReturns boolean"
     },
     "Drupi Server | advancement Iterator​": {
@@ -11,17 +11,17 @@
     },
     "Drupi Server | ban IP": {
 		"prefix": "server.banIP",
-		"body": "server.banIP(\"{1:\"IP address\"}\");",
+		"body": "server.banIP(\"{1:IP address}\");",
 		"description": "Bans the specified address from the server."
     },
     "Drupi Server | broadcast": {
 		"prefix": "server.broadcast",
-		"body": "server.broadcast(\"${1:\"Message\"}\", \"${2:\"Permission\"}\");",
+		"body": "server.broadcast(\"${1:Message}\", \"${2:Permission}\");",
 		"description": "Broadcasts the specified message to every user with the given permission name.\n\nReturns integer"
     },
     "Drupi Server | broadcast Message": {
 		"prefix": "server.broadcastMessage",
-		"body": "server.broadcastMessage(\"${1:\"Message\"}\");",
+		"body": "server.broadcastMessage(\"${1:Message}\");",
 		"description": "Broadcast a message to all players.\n\nReturns integer"
     },
     "Drupi Server | clear Recipes​": {
@@ -32,10 +32,10 @@
     "Drupi Server | create BlockData​": {
 		"prefix": "server.createBlockData​",
 		"body": [
-            "server.createBlockData(\"${1:\"Data\"}\");",
-            "server.createBlockData(${1:\"Material\"});",
-            "server.createBlockData(${1:\"Material\"}, \"${1:\"Data\"}\");",
-            "server.createBlockData(${1:\"Material\"}, ${1:\"consumer\"});"
+            "server.createBlockData(\"${1:Data}\");",
+            "server.createBlockData(${1:Material});",
+            "server.createBlockData(${1:Material}, \"${1:Data}\");",
+            "server.createBlockData(${1:Material}, ${1:consumer});"
         ],
 		"description": [
             "Broadcasts the specified message to every user with the given permission name.",
@@ -47,31 +47,31 @@
     "Drupi Server | create BossBar​": {
 		"prefix": "server.createBossBar​",
 		"body": [
-            "server.createBossBar​(\"${1:\"Title\"}\", ${2:\"(BarColor) color\"}, ${3:\"(BarStyle) style\"}, ${4:\"(BarFlag...) flags\"});",
-            "server.createBossBar​(${1:\"(NamespacedKey) key\"}, \"${2:\"Title\"}\", ${3:\"(BarColor) color\"}, ${4:\"(BarStyle) style\"}, ${5:\"(BarFlag...) flags\"});"
+            "server.createBossBar​(\"${1:Title}\", ${2:(BarColor) color}, ${3:(BarStyle) style}, ${4:(BarFlag...) flags});",
+            "server.createBossBar​(${1:(NamespacedKey) key}, \"${2:Title}\", ${3:(BarColor) color}, ${4:(BarStyle) style}, ${5:(BarFlag...) flags});"
         ],
 		"description": "Creates a boss bar instance to display to players.\n\nReturns BossBar"
     },
     "Drupi Server | create ChunkData​": {
 		"prefix": "server.createChunkData",
-		"body": "server.createChunkData(${1:\"World\"});",
+		"body": "server.createChunkData(${1:World});",
 		"description": "Create a ChunkData for use in a generator.\n\nReturns ChunkGenerator.ChunkData"
     },
     "Drupi Server | create Explorer Map​": {
 		"prefix": "server.createExplorerMap​",
 		"body": [
-            "server.createExplorerMap​(${1:\"World\"}, ${2:\"Location\"}, ${3:\"StructureType\"});",
-            "server.createExplorerMap​(${1:\"World\"}, ${2:\"Location\"}, ${3:\"StructureType\"}, ${4:\"(integer) radius\"}, ${5:\"(boolean) findUnexplored\"});"
+            "server.createExplorerMap​(${1:World}, ${2:Location}, ${3:StructureType});",
+            "server.createExplorerMap​(${1:World}, ${2:Location}, ${3:StructureType}, ${4:(integer) radius}, ${5:(boolean) findUnexplored});"
         ],
 		"description": "Create a new explorer map targeting the closest nearby structure of a given StructureType."
     },
     "Drupi Server | create Inventory​": {
 		"prefix": "server.createInventory",
 		"body": [
-            "server.createInventory(${1:\"Owner\"}, ${2:\"Size\"});",
-            "server.createInventory(${1:\"Owner\"}, ${2:\"Size\"}, \"${1:\"Title\"}\");",
-            "server.createInventory(${1:\"Owner\"}, ${2:\"Type\"}",
-            "server.createInventory(${1:\"Owner\"}, ${2:\"Type\"}, \"${1:\"Title\"}\");"
+            "server.createInventory(${1:Owner}, ${2:Size});",
+            "server.createInventory(${1:Owner}, ${2:Size}, \"${1:Title}\");",
+            "server.createInventory(${1:Owner}, ${2:Type}",
+            "server.createInventory(${1:Owner}, ${2:Type}, \"${1:Title}\");"
         ],
 		"description": [
             "Creates an empty inventory of type InventoryType.CHEST with the specified size.",
@@ -82,27 +82,27 @@
     },
     "Drupi Server | create Map": {
 		"prefix": "server.createMap",
-		"body": "server.createMap(${1:\"World\"});",
+		"body": "server.createMap(${1:World});",
 		"description": "Create a new map with an automatically assigned ID.\n\nReturns MapView"
     },
     "Drupi Server | create Merchant": {
 		"prefix": "server.createMerchant",
-		"body": "server.createMerchant(\"${1:\"Title\"}\");",
+		"body": "server.createMerchant(\"${1:Title}\");",
 		"description": "Creates an empty merchant.\n\nReturns Merchant"
     },
     "Drupi Server | create World": {
 		"prefix": "server.createWorld",
-		"body": "server.createWorld(${1:\"WorldCreator\"});",
+		"body": "server.createWorld(${1:WorldCreator});",
 		"description": "Creates or loads a world with the given name using the specified options.\n\nReturns World"
     },
     "Drupi Server | dispatch Command​": {
 		"prefix": "server.dispatchCommand​",
-		"body": "server.dispatchCommand​(${1:\"CommandSender\"}, \"${2:\"Command line\"}\");",
+		"body": "server.dispatchCommand​(${1:CommandSender}, \"${2:Command line}\");",
 		"description": "Dispatches a command on this server, and executes it if found.\n\nReturns boolean"
     },
     "Drupi Server | get Advancement​": {
 		"prefix": "server.getAdvancement​",
-		"body": "server.getAdvancement​(${1:\"NamespacedKey\"});",
+		"body": "server.getAdvancement​(${1:NamespacedKey});",
 		"description": "Get the advancement specified by this key.\n\nReturns Advancement"
     },
     "Drupi Server | get Allow End": {
@@ -132,7 +132,7 @@
     },
     "Drupi Server | get BanList": {
 		"prefix": "server.getBanlist",
-		"body": "server.getBanlist​(${1:\"Type\"});",
+		"body": "server.getBanlist​(${1:Type});",
         "description": "Gets a ban list for the supplied type.\n\nReturns Banlist"
     },
     "Drupi Server | get Banned Players": {
@@ -143,7 +143,7 @@
     "Drupi Server | get Boss Bar": {
 		"prefix": "server.getBossBar",
 		"body": [
-            "server.getBossBar​(${1:\"Type\"});",
+            "server.getBossBar​(${1:Type});",
             "server.getBossBar​();"
         ],
         "description": "Gets an unmodifiable iterator through all persistent bossbars.\n\nReturns KeyedBossBar"
@@ -175,7 +175,7 @@
     },
     "Drupi Server | get Entity​": {
 		"prefix": "server.getEntity",
-		"body": "server.getEntity(${1:\"uuid\"});",
+		"body": "server.getEntity(${1:uuid});",
         "description": "Gets an entity on the server by its UUID.\n\nReturns Entity"
     },
     "Drupi Server | get Generate Structures​": {
@@ -215,7 +215,7 @@
     },
     "Drupi Server | get Loot Table": {
 		"prefix": "server.getLootTable",
-		"body": "server.getLootTable(${1:\"key\"});",
+		"body": "server.getLootTable(${1:key});",
         "description": "Gets the specified LootTable.\n\nReturns LootTable"
     },
     "Drupi Server | get Max Players": {
@@ -245,7 +245,7 @@
     },
     "Drupi Server | get Offline Player": {
 		"prefix": "server.getOfflinePlayer",
-		"body": "server.getOfflinePlayer(${1:\"id\"});",
+		"body": "server.getOfflinePlayer(${1:id});",
         "description": "Gets the player by the given UUID, regardless if they are offline or online.\n\nReturns OfflinePlayer"
     },
     "Drupi Server | get Offline Players": {
@@ -271,19 +271,19 @@
     "Drupi Server | get Player​": {
 		"prefix": "server.getPlayer​",
         "body": [
-            "server.getPlayer​(\"${1:\"name\"}\");",
-            "server.getPlayer​(${1:\"id\"});"
+            "server.getPlayer​(\"${1:name}\");",
+            "server.getPlayer​(${1:id});"
         ],
         "description": "Gets a player object by the given username.\n\nReturns Player"
     },
     "Drupi Server | get Player Exact": {
 		"prefix": "server.getPlayerExact",
-		"body": "server.getPlayerExact(\"${1:\"Player Name\"}\");",
+		"body": "server.getPlayerExact(\"${1:Player Name}\");",
         "description": "Gets the player with the exact given name, case insensitive.\n\nReturns Player"
     },
     "Drupi Server | get Plugin Command": {
 		"prefix": "server.getPluginCommand​",
-		"body": "server.getPluginCommand​(\"${1:\"Command\"}\");",
+		"body": "server.getPluginCommand​(\"${1:Command}\");",
         "description": "Gets a PluginCommand with the given name or alias.\n\nReturns PluginCommand"
     },
     "Drupi Server | get Plugin Manager": {
@@ -333,12 +333,12 @@
     },
     "Drupi Server | get Tag​": {
 		"prefix": "server.getTag​",
-		"body": "server.getTag(\"${1:\"Registry\"}\", ${2:\"tag\"}, ${3:\"clazz\"});",
+		"body": "server.getTag(\"${1:Registry}\", ${2:tag}, ${3:clazz});",
         "description": "Gets a tag which has already been defined within the server.\n\nReturns <T extends Keyed>Tag<T>"
     },
     "Drupi Server | get Tags​": {
 		"prefix": "server.getTags​",
-		"body": "server.getTags(\"${1:\"Registry\"}\", ${2:\"clazz\"});",
+		"body": "server.getTags(\"${1:Registry}\", ${2:clazz});",
         "description": "Gets a all tags which have been defined within the server.\n\nReturns <T extends Keyed>Iterable<Tag<T>>"
     },
     "Drupi Server | get Ticks Per Animal Spawns​": {
@@ -389,14 +389,14 @@
     "Drupi Server | get World​": {
 		"prefix": "server.getWorld​",
         "body": [
-            "server.getWorld​(\"${1:\"name\"}\");",
-            "server.getWorld​(${1:\"uid\"});"
+            "server.getWorld​(\"${1:name}\");",
+            "server.getWorld​(${1:uid});"
         ],
         "description": "Gets the world with the given name.\n\nReturns World"
     },
     "Drupi Server | get World​ Container": {
 		"prefix": "server.getWorld​Container",
-		"body": "server.getWorldContainer​(\"${1:\"name\"}\");",
+		"body": "server.getWorldContainer​(\"${1:name}\");",
         "description": "Gets the folder that contains all of the various Worlds.\n\nReturns File"
     },
     "Drupi Server | get World​s": {
@@ -426,12 +426,12 @@
     },
     "Drupi Server | load Server Icon​": {
 		"prefix": "server.loadServerIcon​",
-		"body": "server.loadServerIcon​​(${1:\"image\"});",
+		"body": "server.loadServerIcon​​(${1:image});",
         "description": "Creates a cached server-icon for the specific image.\n\nReturns CachedServerIcon"
     },
     "Drupi Server | match Player": {
 		"prefix": "server.matchPlayer",
-		"body": "server.matchPlayer(\"{1:\"Player Name\"}\");",
+		"body": "server.matchPlayer(\"{1:Player Name}\");",
         "description": "Attempts to match any players with the given name, and returns a list of all possibly matches.\n\nReturns List<Player>"
     },
     "Drupi Server | recipe Iterator": {
@@ -456,7 +456,7 @@
     },
     "Drupi Server | remove BossBar": {
 		"prefix": "server.removeBossBar",
-		"body": "server.removeBossBar({1:\"NamespacedKey\"});",
+		"body": "server.removeBossBar({1:NamespacedKey});",
         "description": "Removes a KeyedBossBar specified by this key."
     },
     "Drupi Server | reset Recipes": {
@@ -471,22 +471,22 @@
     },
     "Drupi Server | select Entities": {
 		"prefix": "server.selectEntities",
-		"body": "server.selectEntities({1:\"CommandSender\"}, \"{2:\"Selector\"}\");",
+		"body": "server.selectEntities({1:CommandSender}, \"{2:Selector}\");",
         "description": "Selects entities using the given Vanilla selector."
     },
     "Drupi Server | set Default Gamemode": {
 		"prefix": "server.setDefaultGameMode​",
-		"body": "server.setDefaultGameMode​({1:\"mode\"});",
+		"body": "server.setDefaultGameMode​({1:mode});",
         "description": "Sets the default GameMode for new players."
     },
     "Drupi Server | set Spawn Radius": {
 		"prefix": "server.setSpawnRadius",
-		"body": "server.setSpawnRadius({1:\"Integer\"});",
+		"body": "server.setSpawnRadius({1:Integer});",
         "description": "Sets the radius, in blocks, around each worlds spawn point to protect."
     },
     "Drupi Server | set Whitelist": {
 		"prefix": "server.setWhitelist​",
-		"body": "server.setWhitelist​({1:\"value\"});",
+		"body": "server.setWhitelist​({1:value});",
         "description": "Sets the radius, in blocks, around each worlds spawn point to protect.."
     },
     "Drupi Server | shutdown": {
@@ -501,14 +501,14 @@
     },
     "Drupi Server | unban IP": {
 		"prefix": "server.unbanIP",
-		"body": "server.unbanIP(\"{1:\"address\"}\");",
+		"body": "server.unbanIP(\"{1:address}\");",
         "description": "Unbans the specified address from the server."
     },
     "Drupi Server | unload World": {
 		"prefix": "server.unloadWorld",
         "body": [
-            "server.unbanWorld(\"{1:\"name\"}\", {2:\"save\"});",
-            "server.unbanWorld({1:\"world\"}, {2:\"save\"});"
+            "server.unbanWorld(\"{1:name}\", {2:save});",
+            "server.unbanWorld({1:world}, {2:save});"
         ],
         "description": [
             "Unloads a world with the given name.\n\nReturns boolean",
@@ -522,7 +522,7 @@
     },
     "Drupi Server | send Plugin Message": {
 		"prefix": "server.sendPluginMessage",
-		"body": "server.sendPluginMessage({1:\"Plugin\"}, \"{2:\"Channel\"}\", {3:\"(Byte[]) Message\"});",
+		"body": "server.sendPluginMessage({1:Plugin}, \"{2:Channel}\", {3:(Byte[]) Message});",
         "description": "Sends this recipient a Plugin Message on the specified outgoing channel.\nThe message may not be larger than Messenger.MAX_MESSAGE_SIZE bytes, and the plugin must be registered to send messages on the specified channel"
     }
 }

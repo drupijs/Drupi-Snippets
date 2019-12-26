@@ -1,7 +1,7 @@
 {
     "Drupi Database | new Url": {
 		"prefix": "database.newUrl",
-		"body": "database.newUrl(\"${1:\"URL\"}\");",
+		"body": "database.newUrl(\"${1:URL}\");",
 		"description": "Returns MongoClientURI"
     },
     "Drupi Database | new Obj": {
@@ -11,7 +11,7 @@
     },
     "Drupi Database | convert JSON": {
 		"prefix": "database.convertJSON",
-		"body": "database.convertJSON(${1:\"JSON Object\"});",
+		"body": "database.convertJSON(${1:JSON Object});",
 		"description": "Convert JSON to BasicDBObject\n\nReturns BasicDBObject"
     }
 }

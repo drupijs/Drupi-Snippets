@@ -1,22 +1,22 @@
 {
 	"Drupi Variable | Set": {
 		"prefix": "variable.set",
-		"body": "variable.set(\"${1:\"key\"}\", ${1:\"value\"});",
+		"body": "variable.set(\"${1:key}\", ${1:value});",
 		"description": "Set a variable"
     },
     "Drupi Variable | get": {
 		"prefix": "variable.get",
-		"body": "variable.get(\"${1:\"key\"}\");",
+		"body": "variable.get(\"${1:key}\");",
 		"description": "Getting an String"
 	},
 	"Drupi Variable | exists": {
 		"prefix": "variable.exists",
-		"body": "variable.exists(\"${1:\"key\"}\");",
+		"body": "variable.exists(\"${1:key}\");",
 		"description": "Returns boolean"
     },
     "Drupi Variable | delete": {
 		"prefix": "variable.delete",
-		"body": "variable.delete(\"${1:\"key\"}\");",
+		"body": "variable.delete(\"${1:key}\");",
 		"description": "Delete variable"
     }
 }

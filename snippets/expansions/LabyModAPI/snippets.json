@@ -1,7 +1,7 @@
 {
     "Drupi LabyModAPI | sendServerMessage": {
 		"prefix": "LabyModAPI.sendServerMessage",
-		"body": "LabyModAPI.sendServerMessage(${1:\"Player\"}, \"${2:\"Message Key\"}\", ${3:\"(JsonElement) Message Contents\"});",
+		"body": "LabyModAPI.sendServerMessage(${1:Player}, \"${2:Message Key}\", ${3:(JsonElement) Message Contents});",
 		"description": "Sends server message to the player.\n\nDocumentation at https://docs.labymod.net/pages/server/send_messages/"
     }
 }
