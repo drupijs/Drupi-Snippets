@@ -3,6 +3,7 @@
     "displayName": "Drupi-Snippets",
     "description": "Native Drupi snippets support for VSCode",
     "version": "0.0.1",
+    "publisher": "Stacket",
     "author": {
         "name": "Alexander Møller",
         "email": "thehundeklemmen@gmail.com",
