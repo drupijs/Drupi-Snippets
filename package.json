@@ -2,7 +2,7 @@
     "name": "drupi-snippets",
     "displayName": "Drupi-Snippets",
     "description": "Native Drupi snippets support for VSCode",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "keywords": [
         "Drupi",
         "Stacket"
